@@ -1,0 +1,5 @@
+outs:
+- md5: f035f9a3a6fc6dde05f026a07786a725
+  size: 1159501
+  path: zomato_18052019_084400.csv
+  isexec: true
