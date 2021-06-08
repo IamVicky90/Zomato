@@ -1,5 +1,21 @@
 Zomato
 ==============================
+Steps That I take to Solve this ML Problem
+Data Validation
+```
+1. In this step, we perform different sets of validation on the given set of training files.
+
+2. Name Validation - We validate the name of the files based on the given name in the schema file. We have created a regex pattern as per the name given in the schema file to use for validation. After validating the pattern in the name, we check for the length of date in the file name as well as the length of time in the file name. If all the values are as per requirement, we copy such files to "Good_Data_Folder" else we copy such files to "Bad_Data_Folder."
+
+3. Number of Columns - We validate the number of columns present in the files, and if it doesn't match with the value given in the schema file, then the file is copied to "Bad_Data_Folder."
+
+4. Name of Columns - The name of the columns is validated and should be the same as given in the schema file. If not, then the file is copied to "Bad_Data_Folder".
+
+5. The datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If the datatype is wrong, then the file is copied to "Bad_Data_Folder".
+
+6. Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Bad_Data_Folder".
+```
+
 
 A short description of the project.
 
