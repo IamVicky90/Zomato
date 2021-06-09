@@ -1,6 +1,6 @@
 Zomato
 ==============================
-Steps That I take to Solve this ML Problem
+# Steps That I take to Solve this ML Problem
 ## Data Validation
 ------------
 1. In this step, we perform different sets of validation on the given set of training files.
