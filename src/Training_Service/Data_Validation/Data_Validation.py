@@ -88,7 +88,7 @@ class Validate_data:
             df=pd.read_csv(os.path.join(self.good_data_path,file))
             df.fillna('NaN',inplace=True)
             df.to_csv(os.path.join(self.good_data_path,file))
-            self.log.log_writer(f'The NULL values in file {file} (if present) is sucessfully converted to NAN string','Data_Validation.log','INFO')
+            self.log.log_writer(f'The NULL values in file {file} (if present) is sucessfully converted to NaN string','Data_Validation.log','INFO')
 
 
    

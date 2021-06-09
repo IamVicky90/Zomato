@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Vicky World Production!</title>
+</head>
+<style>
+  .py-24 {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+
+}
+
+</style>
+<body>
+
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col">
+            <div class="h-1 bg-gray-200 rounded overflow-hidden">
+              <div class="w-24 h-full bg-indigo-500"></div>
+            </div>
+            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+              <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Welcome To Zomata Buissness Problem</h1>
+              <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">This will tell you whether the particular wafer is working fine or not</p>
+            </div>
+          </div>
+          </div>
+        
+    <!-- <section class="text-gray-600 body-font"> -->
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="https://enlightem.eu/wp-content/uploads/2020/07/Affirmative-Action-Training.jpg">
+              </div>
+              <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Click Here For the custom Training!</h2>
+              <p class="leading-relaxed text-base">This may take a while for Training please keep patience while doing so!</p>
+              <form method="POST" action="/train" enctype="multipart/form-data" onsubmit="showloading()">
+                <input type="file" accept=".csv" webkitdirectory directory multiple name="folder"/>
+                <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Training</button>
+                </form>
+                
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="https://www.onceuponapicture.co.uk/wp-content/uploads/2017/04/Photo-03-04-2017-19-53-48-1.jpg">
+                </div>
+                <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Click here to Predict!</h2>
+                <p class="leading-relaxed text-base">This may take a while for Predicting please keep patience while doing so!</p>
+                <form method="POST" action="/predict" enctype="multipart/form-data" onsubmit="showloading()">
+                    <input type="file" webkitdirectory directory multiple name="folder"/>
+                    <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Prediction</button>
+                </form>
+                </div>
+          </div>
+        </div>
+
+      <!-- </section> -->
+</body>
+</html>
