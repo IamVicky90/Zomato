@@ -31,5 +31,5 @@ class Validate_data:
             self.log.log_writer(f'Sucessfully copy the file {file} to Good_Data_Folder','Data_Validation.log')
         except Exception as e:
             self.log.log_writer(f'Could not copy the file {file} to Good_Data_Folder error: {str(e)}','Data_Validation.log','Error')
-
-
+    def copy(self):
+        pass
