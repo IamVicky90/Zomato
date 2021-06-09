@@ -11,12 +11,18 @@ Data Validation
 
 4. Name of Columns - The name of the columns is validated and should be the same as given in the schema file. If not, then the file is copied to "Bad_Data_Folder".
 
-5. The datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If the datatype is wrong, then the file is copied to "Bad_Data_Folder".
+5. Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Bad_Data_Folder".
 
-6. Null values in columns - If any of the columns in a file have all the values as NULL or missing, we discard such a file and move it to "Bad_Data_Folder".
+6. Replace Null with NAN - Replace the null values with 'nan' string because in some databases we can't add Null values or Null type values.
+
+7. The datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If the datatype is wrong, then the file is copied to "Bad_Data_Folder".
+
 ------------
-
-
+Data Base Operations
+1. In this stage we have to dump our data into some databases so that we or the team members can acess it.
+2. The database that we have use in this problem is sqllite3 for our simplicity.
+3. We also create a csv master file out of this sqllite database so that we can do all the operation without damaging the dataset
+------------
 A short description of the project.
 
 Project Organization
