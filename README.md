@@ -1,7 +1,7 @@
 Zomato
 ==============================
 Steps That I take to Solve this ML Problem
-Data Validation
+## Data Validation
 ------------
 1. In this step, we perform different sets of validation on the given set of training files.
 
@@ -18,7 +18,7 @@ Data Validation
 7. The datatype of columns - The datatype of columns is given in the schema file. This is validated when we insert the files into Database. If the datatype is wrong, then the file is copied to "Bad_Data_Folder".
 
 ------------
-Data Base Operations
+## Data Base Operations
 1. In this stage we have to dump our data into some databases so that we or the team members can acess it.
 2. The database that we have use in this problem is sqllite3 for our simplicity.
 3. We also create a csv master file out of this sqllite database so that we can do all the operation without damaging the dataset
