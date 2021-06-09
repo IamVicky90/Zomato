@@ -3,18 +3,25 @@
 	"LengthOfTimeStampInFile": 6,
 	"NumberofColumns" :18,
 	"ColName": {
-				"serial": "FLOAT",
-				"online_order": "VARCHAR",
-				"book_table" : "VARCHAR",
-				"rate" : "VARCHAR",
-				"votes" : "FLOAT",
-				"location" : "VARCHAR",
-				"rest_type" : "VARCHAR",
-				"cuisines" : "VARCHAR",
-				"approx_cost(for two people)" : "FLOAT",
-				"menu_item" : "VARCHAR",
-				"listed_in(type)": "VARCHAR",
-				"listed_in(city)": "VARCHAR"
+				
+				"serial"             :             "FLOAT",
+				"url"                :            "VARCHAR",
+				"address"            :            "VARCHAR",
+				"name"                :           "VARCHAR",
+				"online_order"        :           "VARCHAR",
+				"book_table"          :           "VARCHAR",
+				"rate"                :           "VARCHAR",
+				"votes"              :             "FLOAT",
+				"phone"               :           "VARCHAR",
+				"location"           :            "VARCHAR",
+				"rest_type"          :            "VARCHAR",
+				"dish_liked"          :           "VARCHAR",
+				"cuisines"            :           "VARCHAR",
+				"approx_cost(for two people)"  :  "VARCHAR",
+				"reviews_list"               :    "VARCHAR",
+				"menu_item"                  :    "VARCHAR",
+				"listed_in(type)"            :    "VARCHAR",
+				"listed_in(city)"            :    "VARCHAR"
 	}
 }
 

@@ -4,6 +4,7 @@ import json
 import re
 import shutil
 import csv
+import pandas as pd
 class Validate_data:
     def __init__(self,data_folder,schema):
         self.data_folder=data_folder
@@ -51,14 +52,43 @@ class Validate_data:
             self.log.log_writer(f'Could not copy the file {file} to Bad_Data_Folder error: {str(e)}','Data_Validation.log','Error')
     def validate_number_of_columns(self):
         for file in os.listdir(self.good_data_path):
-            with open(file,'') as csvfile:
+            with open(os.path.join(self.good_data_path,file)) as csvfile:
                 reader=csv.reader(csvfile)
                 for row in reader:
                     if len(row)==int(self.json_file['NumberofColumns']):
-                        self.log.log_writer(f'Number of Columns of file {file} Matched with the schema','Data_Validation.log')
+                        self.log.log_writer(f'Number of Columns of file {file} Matched with the schema file','Data_Validation.log')
                     else:
                         self.log.log_writer(f'Number of Columns of file  {file} doesnot Matched with the schema so we are moving it to Bad Data','Data_Validation.log','Warning')
-                        self.move_to_Bad_Data_Folder()
+                        self.move_to_Bad_Data_Folder(os.path.join('Training_Batch_Files',file),file)
                     break
+    def validate_name_of_columns(self):
+        for file in os.listdir(self.good_data_path):
+            df=pd.read_csv(os.path.join(self.good_data_path,file))
+
+            if list(df.columns)==list(self.json_file['ColName'].keys()):
+                self.log.log_writer(f'Name of Columns of file {file} Matched with the schema file','Data_Validation.log')
+            else:
+                self.log.log_writer(f'Name of Columns of file {file} not matched with the schema file so we are moving towards Bad_Data_Folder','Data_Validation.log','Warning')
+                self.move_to_Bad_Data_Folder(os.path.join('Training_Batch_Files',file),file)
+    def remove_col_that_have_all_null_values(self):
+        for file in os.listdir(self.good_data_path):
+            flag=True
+            df=pd.read_csv(os.path.join(self.good_data_path,file))
+            null_values=df.isnull().sum()
+            for val in null_values:
+                if val==df.shape[0]:
+                    self.log.log_writer(f'This file {file} has/have column(s) that has all null values so we are moving towards bad data','Data_Validation.log','Warning')
+                    flag=False
+                    break
+            if flag:
+                    self.log.log_writer(f'The file {file} has not have any column that has all null values','Data_Validation.log')
+    def replace_Null_with_NAN(self):
+        # Replce Null values with NAN because some datbases may through the error with some Null values
+        for file in os.listdir(self.good_data_path):
+            df=pd.read_csv(os.path.join(self.good_data_path,file))
+            df.fillna('NAN',inplace=True)
+            df.to_csv(os.path.join(self.good_data_path,file))
+            self.log.log_writer(f'The NULL values in file {file} (if present) is sucessfully converted to NAN string','Data_Validation.log','INFO')
+
 
    
