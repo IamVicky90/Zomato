@@ -55,6 +55,7 @@ class db_ops:
             for file in os.listdir('Good_Data_Folder'):
                 with open(os.path.join('Good_Data_Folder',file),) as csvfile:
                     rows = csv.reader(csvfile)
+                    next(rows)
                     for row in rows:
                         cur.execute(f"INSERT INTO {table} VALUES (?, ?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", row[1:])
                     conn.commit()
@@ -67,7 +68,7 @@ class db_ops:
             cur=conn.cursor()
             csv_file=pd.read_sql_query(f'select * from {table}',conn)
             os.makedirs('Master_Training_File',exist_ok=True)
-            csv_file.to_csv(os.path.join('Master_Training_File','Zomato.csv'))
+            csv_file.to_csv(os.path.join('Master_Training_File','Zomato.csv'),index=False)
             self.log.log_writer(f'Successfully dump the data from {dbname} database to one csv file','DB_Operations.log')
         except Exception as e:
             self.log.log_writer(f'Could not  dump the data from {dbname} database to one csv file error: {str(e)}','DB_Operations.log','Error')

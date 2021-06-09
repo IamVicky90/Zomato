@@ -86,7 +86,7 @@ class Validate_data:
         # Replce Null values with NAN because some datbases may through the error with some Null values
         for file in os.listdir(self.good_data_path):
             df=pd.read_csv(os.path.join(self.good_data_path,file))
-            df.fillna('NAN',inplace=True)
+            df.fillna('NaN',inplace=True)
             df.to_csv(os.path.join(self.good_data_path,file))
             self.log.log_writer(f'The NULL values in file {file} (if present) is sucessfully converted to NAN string','Data_Validation.log','INFO')
 
