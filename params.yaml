@@ -1,0 +1,11 @@
+data_preprocessing:
+  csv_path: Master_Training_File/Zomato.csv
+  columns_to_remove: ['serial','url','address' ,'phone', 'reviews_list','dish_liked']
+  n_neighbors: 3
+  rename_columns: {'listed_in_type':'type','listed_in_city':'city','approx_cost_for_two_people':'cost'}
+  columns_to_dummy_variables: ['location','name','rest_type','cuisines','menu_item','online_order','book_table','type','city']
+  drop_first: True
+  alpha: 0.005 # for lasso feature selection
+  train_test_split:
+    test_size: 0.2
+    random_state: 42
