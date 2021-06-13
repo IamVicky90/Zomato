@@ -1,0 +1,10 @@
+stages:
+  training_service:
+    cmd: python app.py
+    deps:
+    - Training_Batch_Files
+    - src/Training_Service/Data_Preprocessing/preprocessing.py
+    - src/Training_Service/Data_Validation/Data_Validation.py
+    - src/Training_Service/db/db_operations.py
+    - src/logger/logger.py
+    - schema_training.json

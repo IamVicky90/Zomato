@@ -61,6 +61,7 @@ def train():
         X_dummy_selected_list_of_features_by_lasso=process.feature_selection(X_dummy,Y_dummy,alpha=config_file['data_preprocessing']['alpha'])
         final_x_train=process.return_selected_features_by_lasso(X_dummy,X_dummy_selected_list_of_features_by_lasso)
         x_train,x_test,y_train,y_test=process.split_into_train_test(X_dummy,Y_dummy,test_size=config_file['data_preprocessing']['train_test_split']['test_size'],random_state=config_file['data_preprocessing']['train_test_split']['random_state'])
+        print('Hellow Vicky')
         return '<h1>Cool! Training Completed Sucessfully!</h1>'
     else:
         return redirect(url_for('home'))

@@ -1,7 +1,7 @@
 from src.logger import logger
-import pandas as pd
-from sklearn.impute import KNNImputer
-import numpy as np
+import pandas as pd 
+from sklearn.impute import KNNImputer # To fill null values
+import numpy as np # For array manipulation
 from sklearn.feature_selection import SelectFromModel # For feature Selection
 from sklearn.linear_model import Lasso # Import Lasso as feature Selection model
 from sklearn.model_selection import train_test_split
