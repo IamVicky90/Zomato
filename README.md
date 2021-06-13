@@ -82,22 +82,71 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
+    |──src/
+        ├── __init__.py
+        ├── __pycache__/
+        │   ├── __init__.cpython-37.pyc
+        │   └── __init__.cpython-38.pyc
+        ├── data/
+        │   ├── .gitkeep
+        │   ├── __init__.py
+        │   └── make_dataset.py
+        ├── features/
+        │   ├── .gitkeep
+        │   ├── __init__.py
+        │   └── build_features.py
+        ├── log_files/
+        │   └── Training_logs/
+        │       ├── Data_Validation.log
+        │       ├── DB_Operations.log
+        │       ├── preprocessing.log
+        │       └── X_dummy_selected_list_of_features_by_lasso.txt
+        ├── logger/
+        │   ├── __pycache__/
+        │   │   ├── logger.cpython-37.pyc
+        │   │   └── logger.cpython-38.pyc
+        │   └── logger.py
+        ├── models/
+        │   ├── .gitkeep
+        │   ├── __init__.py
+        │   ├── predict_model.py
+        │   └── train_model.py
+        ├── Training_Service/
+        │   ├── Data_Preprocessing/
+        │   │   ├── __pycache__/
+        │   │   │   ├── preprocessing.cpython-37.pyc
+        │   │   │   └── preprocessing.cpython-38.pyc
+        │   │   └── preprocessing.py
+        │   ├── Data_Validation/
+        │   │   ├── __pycache__/
+        │   │   │   ├── Data_Validation.cpython-37.pyc
+        │   │   │   └── Data_Validation.cpython-38.pyc
+        │   │   └── Data_Validation.py
+        │   └── db/
+        │       ├── __pycache__/
+        │       │   ├── db_operations.cpython-37.pyc
+        │       │   └── db_operations.cpython-38.pyc
+        │       └── db_operations.py
+        └── visualization/
+        ├── .gitkeep
+        ├── __init__.py
+        └── visualize.py
+    |──templates
+        index.html
+    |──Training_Batch_Files/
+        ├── zomato_16052019_12345.csv
+        └── zomato_16052019_204900.csv
+    |── app.py
+    |──dvc.loc
+    |── dvc.yaml
+    |── LICENSE
+    |── MakeFile
+    |── params.yaml
+    |──README.md
+    |── requirements.txt
+    |──schema_prediction.py
+    |──schema_training.py
+    |── zomato.db
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 
