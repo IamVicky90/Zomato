@@ -39,7 +39,7 @@ Zomato
     4. I used onehot encoding and category_encoders with base value 5( we use this technique when we face a lot of different catagarical data, so that it doesn't lead to curse of dimenstionality) because the data in catagorical feature don't have any relation between them.
     5. After applying onehot encoding and I see that onehot encoding gives us the better result so I keep onehot encoding.
 3. Exploratory Data Analysis:
-    1. All the Exploratory Data Analysis is done in [Zomata EDA.ipynb](notebooks/Zomata EDA.ipynb) along with the proper comment.
+    1. All the Exploratory Data Analysis is done in ![Zomata EDA.ipynb](notebooks/Zomata EDA.ipynb) along with the proper comment.
     2. It is recommended to see this jupyter notebook file, I have explained all the steps beautifully here.
 4. Feature Selection:
     1. As there is a lot of features present so that may cause a curse of dimenstionality, to remove this I selected features using Lasso by SelectFromModel funtion from sklearn library.
