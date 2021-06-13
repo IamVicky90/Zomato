@@ -23,6 +23,16 @@ Zomato
 2. The database that we have use in this problem is sqllite3 for our simplicity.
 3. We also create a csv master file out of this sqllite database so that we can do all the operation without damaging the dataset
 ------------
+## Data Preprocessing
+* In this stage we will do the data preprocessing that includes cleaning the data/columns, feature engineering, removing or imputing nan values, feature selection and splitting the data into train_test_split.
+### Steps that included in Data Preprocessing
+1. cleaning the data/columns:
+Followings are the steps that I take in this Stage:
+    1. Drop unnecessery columns:
+        In 'Drop unnecessery columns' stage we remove 'serial','url','address' ,'phone', 'reviews_list','dish_liked' columns as they don't play any role while predicting or analyzing the data.
+    * rename_the_columns:
+        In this stage we rename the columns for our simplicity
+------------
 A short description of the project.
 
 Project Organization
