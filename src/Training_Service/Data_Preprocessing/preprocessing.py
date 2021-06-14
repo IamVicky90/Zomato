@@ -107,9 +107,9 @@ class process_data:
             self.log.log_writer(f'Could not create the dataframe of the selected features that are important for the prediction error: {str(e)}','preprocessing.log',message_type='Error')
         return dummy_dataframe_with_selected_features_by_lasso
 
-    def split_into_train_test(self,x,y,test_size=0.2,random_state=42):
+    def split_into_train_test(self,final_x_train,Y,test_size=0.2,random_state=42):
         try:
-            x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=42) #split into x_train,x_test,y_train,y_test with 20% of test size
+            x_train,x_test,y_train,y_test=train_test_split(final_x_train,Y,test_size=0.2,random_state=42) #split into x_train,x_test,y_train,y_test with 20% of test size
             self.log.log_writer(f'Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test','preprocessing.log',message_type='INFO')
         except Exception as e:
             self.log.log_writer(f'Could not train_test_split the dummy dataframe into x_train,x_test,y_train,y_test error: {str(e)}','preprocessing.log',message_type='Error')

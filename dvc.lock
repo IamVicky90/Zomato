@@ -10,15 +10,21 @@ stages:
     - path: schema_training.json
       md5: 1cd968711289d509966c2a949cedbc23
       size: 1067
+    - path: src/Training_Service/Cluster_Data/cluster.py
+      md5: 764f1224e87e9b8119c8ee3915fef989
+      size: 2450
     - path: src/Training_Service/Data_Preprocessing/preprocessing.py
-      md5: e667eb31d61312dc442d32a55cdb4c4f
-      size: 8950
+      md5: 448b0b70a93af6e282246333b772524d
+      size: 8974
     - path: src/Training_Service/Data_Validation/Data_Validation.py
       md5: 61ef53017cc9ad479d3d4faa76b00618
       size: 5808
     - path: src/Training_Service/db/db_operations.py
       md5: 0956ac74841ff4da5e476ecc20d2db31
       size: 4040
+    - path: src/Training_Service/model_operations/model_ops.py
+      md5: afc77fbd99d7cc4bdb20305c23a8cb05
+      size: 1261
     - path: src/logger/logger.py
       md5: f772aeefe617fbfa19810cadd93f6409
       size: 1233

@@ -2,6 +2,8 @@ import re
 from src.Training_Service.Data_Validation import Data_Validation
 from src.Training_Service.db import db_operations
 from src.Training_Service.Data_Preprocessing import preprocessing
+from src.Training_Service.Cluster_Data import cluster
+from src.Training_Service.model_operations import model_ops
 from flask import Flask, render_template, jsonify,request,redirect,url_for
 import os
 import shutil
@@ -57,11 +59,14 @@ def train():
         df=process.drop_nan_values(df)
         df= process.cleaning_the_data_present_in_the_features(df)
         dummy= process.create_dummy_columns(df,columns=config_file['data_preprocessing']['columns_to_dummy_variables'],drop_first=config_file['data_preprocessing']['drop_first'])
-        X_dummy,Y_dummy=process.split_dummy_into_X_and_Y(dummy)
-        X_dummy_selected_list_of_features_by_lasso=process.feature_selection(X_dummy,Y_dummy,alpha=config_file['data_preprocessing']['alpha'])
+        X_dummy,Y=process.split_dummy_into_X_and_Y(dummy)
+        X_dummy_selected_list_of_features_by_lasso=process.feature_selection(X_dummy,Y,alpha=config_file['data_preprocessing']['alpha'])
         final_x_train=process.return_selected_features_by_lasso(X_dummy,X_dummy_selected_list_of_features_by_lasso)
-        x_train,x_test,y_train,y_test=process.split_into_train_test(X_dummy,Y_dummy,test_size=config_file['data_preprocessing']['train_test_split']['test_size'],random_state=config_file['data_preprocessing']['train_test_split']['random_state'])
-        print('Hellow Vicky')
+        x_train,x_test,y_train,y_test=process.split_into_train_test(final_x_train,Y,test_size=config_file['data_preprocessing']['train_test_split']['test_size'],random_state=config_file['data_preprocessing']['train_test_split']['random_state'])
+        cluster_obj=cluster.cluster()
+        x_train_with_cluster=cluster_obj.create_clusters(x_train)
+        model_obs_obj=model_ops.model_operations()
+        model_obs_obj.train_model_with_clusters(x_train_with_cluster,y_train)
         return '<h1>Cool! Training Completed Sucessfully!</h1>'
     else:
         return redirect(url_for('home'))
