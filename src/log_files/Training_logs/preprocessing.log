@@ -427,3 +427,510 @@
 2021-06-15 12:33:50		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
 2021-06-15 12:33:50		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
 2021-06-15 12:33:50		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:37:35		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:37:35		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:37:35		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:37:35		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:37:35		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:37:35		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:37:35		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:37:35		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:37:36		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:37:38		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:37:38		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:37:39		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:37:39		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:38:30		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:38:30		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:38:30		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:38:30		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:38:30		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:38:30		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:38:30		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:38:31		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:38:31		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:38:33		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:38:33		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:38:33		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:38:33		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:41:05		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:41:05		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:41:05		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:41:05		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:41:05		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:41:05		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:41:05		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:41:05		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:41:05		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:41:07		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:41:08		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:41:08		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:41:08		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:42:11		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:42:11		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:42:11		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:42:11		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:42:11		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:42:11		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:42:11		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:42:11		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:42:11		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:42:14		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:42:14		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:42:14		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:42:15		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:45:28		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:45:28		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:45:28		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:45:28		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:45:28		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:45:28		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:45:28		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:45:29		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:45:29		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:45:31		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:45:31		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:45:32		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:45:32		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:47:28		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:47:28		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:47:28		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:47:28		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:47:28		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:47:28		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:47:28		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:47:28		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:47:28		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:47:30		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:47:30		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:47:31		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:47:31		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:48:47		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:48:47		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:48:47		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:48:47		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:48:47		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:48:47		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:48:47		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:48:47		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:48:47		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:48:50		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:48:50		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:48:51		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:48:51		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:50:29		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:50:29		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:50:29		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:50:29		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:50:29		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:50:29		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:50:29		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:50:29		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:50:29		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:50:31		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:50:31		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:50:31		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:50:32		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:51:58		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:51:59		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:51:59		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:51:59		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:51:59		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:51:59		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:51:59		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:51:59		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:51:59		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:52:02		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:52:02		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:52:03		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:52:03		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:54:39		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:54:40		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:54:40		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:54:40		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:54:40		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:54:40		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:54:40		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:54:40		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:54:40		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:54:42		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:54:42		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:54:42		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:54:42		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:56:16		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:56:16		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:56:16		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:56:16		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:56:16		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:56:16		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:56:16		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:56:16		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:56:16		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:56:18		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:56:18		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:56:19		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:56:19		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:56:52		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:56:52		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:56:52		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:56:52		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:56:52		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:56:52		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:56:53		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:56:53		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:56:53		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:56:55		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:56:55		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:56:56		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:56:56		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 15:59:06		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:59:06		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 15:59:06		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 15:59:06		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 15:59:06		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 15:59:06		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 15:59:06		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 15:59:06		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 15:59:06		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 15:59:08		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 15:59:08		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 15:59:08		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 15:59:08		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:00:55		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:00:55		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:00:55		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:00:56		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:00:56		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:00:56		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:00:56		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:00:56		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:00:56		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:00:58		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:00:58		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:00:58		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:00:58		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:03:06		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:03:06		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:03:06		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:03:06		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:03:06		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:03:06		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:03:06		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:03:06		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:03:06		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:03:08		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:03:08		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:03:08		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:03:08		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:04:29		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:04:29		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:04:29		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:04:29		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:04:29		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:04:29		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:04:29		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:04:29		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:04:29		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:04:32		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:04:32		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:04:32		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:04:32		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:07:11		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:07:11		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:07:11		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:07:11		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:07:11		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:07:11		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:07:11		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:07:11		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:07:11		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:07:13		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:07:13		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:07:13		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:07:13		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:08:18		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:08:18		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:08:18		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:08:18		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:08:18		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:08:18		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:08:18		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:08:19		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:08:19		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:08:21		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:08:21		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:08:21		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:08:21		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:11:49		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:11:50		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:11:50		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:11:50		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:11:50		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:11:50		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:11:50		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:11:50		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:11:50		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:11:52		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:11:52		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:11:52		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:11:52		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:20:01		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:20:01		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:20:01		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:20:01		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:20:01		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:20:01		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:20:01		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:20:01		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:20:02		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:20:04		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:20:04		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:20:04		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:20:04		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:22:12		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:22:12		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:22:12		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:22:12		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:22:12		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:22:12		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:22:12		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:22:12		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:22:12		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:22:15		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:22:15		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:22:15		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:22:15		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 16:23:01		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:23:01		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 16:23:01		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 16:23:01		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 16:23:01		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 16:23:01		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 16:23:01		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 16:23:01		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 16:23:01		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 16:23:03		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 16:23:03		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 16:23:04		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 16:23:04		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-15 17:55:23		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 17:55:23		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-15 17:55:23		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-15 17:55:23		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-15 17:55:24		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-15 17:55:24		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-15 17:55:24		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-15 17:55:24		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-15 17:55:24		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-15 17:55:26		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-15 17:55:26		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-15 17:55:27		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-15 17:55:27		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:12:02		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:12:02		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:12:02		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:12:02		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:12:02		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:12:02		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:12:02		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:12:02		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:12:03		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:12:05		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:12:05		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:12:05		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:12:05		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:12:19		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:12:19		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:12:19		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:12:19		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:12:19		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:12:19		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:12:19		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:12:19		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:12:19		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:12:21		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:12:21		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:12:21		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:12:21		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:12:35		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:12:35		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:12:35		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:12:35		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:12:35		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:12:35		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:12:35		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:12:35		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:12:35		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:12:37		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:12:37		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:12:37		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:12:37		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:15:26		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:15:26		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:15:26		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:15:26		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:15:26		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:15:26		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:15:26		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:15:26		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:15:26		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:15:28		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:15:28		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:15:28		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:15:28		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:15:42		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:15:42		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:15:42		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:15:42		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:15:42		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:15:42		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:15:42		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:15:42		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:15:42		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:15:44		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:15:44		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:15:44		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:15:44		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:15:58		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:15:58		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:15:58		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:15:58		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:15:58		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:15:58		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:15:58		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:15:58		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:15:58		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:16:01		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:16:01		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:16:01		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:16:01		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:17:25		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:17:25		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:17:25		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:17:25		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:17:25		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:17:25		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:17:25		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:17:25		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:17:25		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:17:28		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:17:28		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:17:28		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:17:29		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:20:03		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:20:03		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:20:04		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:20:04		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:20:04		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:20:04		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:20:04		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:20:04		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:20:04		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:20:06		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:20:06		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:20:06		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:20:06		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:20:20		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:20:20		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:20:20		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:20:20		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:20:20		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:20:20		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:20:20		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:20:20		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:20:20		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:20:22		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:20:22		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:20:22		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:20:22		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:20:36		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:20:36		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:20:36		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:20:36		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:20:36		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:20:36		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:20:36		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:20:36		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:20:36		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:20:38		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:20:38		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:20:38		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:20:38		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:22:52		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:22:52		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:22:52		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:22:52		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:22:52		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:22:52		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:22:52		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:22:52		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:22:52		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:22:55		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:22:55		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:22:55		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:22:55		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:38:54		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:38:54		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:38:54		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:38:54		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:38:54		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:38:54		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:38:54		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:38:54		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:38:54		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:38:58		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:38:58		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:38:58		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:38:58		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:41:25		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:41:25		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:41:25		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:41:25		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:41:25		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:41:25		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:41:25		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:41:25		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:41:25		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:41:27		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:41:27		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:41:28		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:41:28		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:48:31		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:48:32		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:48:32		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:48:32		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:48:32		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:48:32		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:48:32		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:48:32		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:48:32		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:48:33		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:48:33		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:48:34		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:48:34		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:49:28		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:49:28		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:49:28		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:49:28		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:49:28		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:49:28		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:49:28		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:49:29		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:49:29		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:49:31		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:49:31		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:49:31		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:49:31		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test
+2021-06-16 00:51:04		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:51:04		INFO: Successfully converted csv file from path Master_Training_File/Zomato.csv to Pandas DataFrame
+2021-06-16 00:51:04		INFO: Successfully removed the columns ['serial', 'url', 'address', 'phone', 'reviews_list', 'dish_liked'] from Pandas DataFrame
+2021-06-16 00:51:04		INFO: Successfully renames the columns from dict_keys(['listed_in_type', 'listed_in_city', 'approx_cost_for_two_people']) to dict_values(['type', 'city', 'cost']) in Pandas DataFrame
+2021-06-16 00:51:04		Warning: There is 104 nan values present in this dataset that are sucessfully removed
+2021-06-16 00:51:04		INFO: Sucessfuly cleaned and change the datatype of feature rate
+2021-06-16 00:51:04		INFO: Sucessfuly cleaned and change the datatype of feature cost
+2021-06-16 00:51:04		INFO: Sucessfully created the dummy variables of columns ['location', 'name', 'rest_type', 'cuisines', 'menu_item', 'online_order', 'book_table', 'type', 'city'] now the column size is increased from 12 to 1187
+2021-06-16 00:51:04		INFO: Sucessfully split the dummy dataframe into X_dummy, Y_dummy
+2021-06-16 00:51:06		INFO: Sucessfully created the list of the features that are important for the prediction
+2021-06-16 00:51:06		Warning: To see the list of the features that are important for the prediction please see the X_dummy_selected_list_of_features_by_lasso.txt file
+2021-06-16 00:51:06		INFO: Sucessfully create the dataframe of the selected features that are important for the prediction.
+2021-06-16 00:51:06		INFO: Sucessfully train_test_split the dummy dataframe into x_train,x_test,y_train,y_test

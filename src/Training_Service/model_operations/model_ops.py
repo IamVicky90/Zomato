@@ -23,17 +23,17 @@ class model_operations:
             except Exception as NameError:
                 self.log.log_writer(f'NameError occured in train_model_with_clusters','model_operations.log','ERROR')
     def predict_model_with_cluster(self,x_test,y_test):
+        y_true=[]
+        y_pred=[]
         for cluster_no in x_test['cluster'].unique():
-                cluster_x=x_test[x_test['cluster']==cluster_no]
-                cluster_y=y_test[cluster_x.index]
-                path=os.path.join(os.getcwd(),'models')
-                for file in path:
-                    if cluster_no in file and '.sav' in file:
-                        model=pickle.load(open(os.path.join(path,file),'rb'))
-                        p=model.predict(cluster_x)
-                        print(p)
-
-                # self.rn.fit(cluster_x.drop(['cluster'],axis=1),cluster_y)
-
-
+            cluster_x=x_test[x_test['cluster']==cluster_no]
+            cluster_y=y_test[cluster_x.index]
+            path=os.path.join(os.getcwd(),'models')
+            for file in os.listdir(path):
+                if str(cluster_no) in file and '.sav' in file:
+                    model=pickle.load(open(os.path.join(path,file),'rb'))
+                    predict=model.predict(cluster_x.drop(['cluster'],axis=1))
+                    y_true=y_true+cluster_y.to_numpy().tolist()
+                    y_pred=y_pred+predict.tolist()
+        return y_true,y_pred
         
