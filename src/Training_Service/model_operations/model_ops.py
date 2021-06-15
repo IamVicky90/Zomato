@@ -22,6 +22,18 @@ class model_operations:
                 self.log.log_writer(f'Could not saved the {model_name} at path {path} error: {str(e)}','model_operations.log','ERROR')
             except Exception as NameError:
                 self.log.log_writer(f'NameError occured in train_model_with_clusters','model_operations.log','ERROR')
+    def predict_model_with_cluster(self,x_test,y_test):
+        for cluster_no in x_test['cluster'].unique():
+                cluster_x=x_test[x_test['cluster']==cluster_no]
+                cluster_y=y_test[cluster_x.index]
+                path=os.path.join(os.getcwd(),'models')
+                for file in path:
+                    if cluster_no in file and '.sav' in file:
+                        model=pickle.load(open(os.path.join(path,file),'rb'))
+                        p=model.predict(cluster_x)
+                        print(p)
+
+                # self.rn.fit(cluster_x.drop(['cluster'],axis=1),cluster_y)
 
 
         
