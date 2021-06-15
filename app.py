@@ -1,4 +1,3 @@
-import re
 from src.Training_Service.Data_Validation import Data_Validation
 from src.Training_Service.db import db_operations
 from src.Training_Service.Data_Preprocessing import preprocessing
@@ -10,10 +9,13 @@ import shutil
 import sys
 import yaml
 app=Flask(__name__)
-def createTrainingDirectories():
+def create_necessary_Directories():
     if 'Training_Batch_Files' in os.listdir(os.getcwd()):
         shutil.rmtree('Training_Batch_Files')
     os.makedirs('Training_Batch_Files')
+    if 'models' in os.listdir(os.getcwd()):
+        shutil.rmtree('models')
+    os.makedirs('models')
 def read_params():
     with open('params.yaml') as  file:
         config=yaml.safe_load(file)
@@ -24,7 +26,7 @@ def home():
 @app.route('/train',methods=['POST','GET'])
 def train():
     if request.method=='POST':
-        createTrainingDirectories()
+        create_necessary_Directories()
         Training_path='Training_Batch_Files'
         files=request.files.getlist("folder")
         for file in files:

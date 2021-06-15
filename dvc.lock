@@ -7,6 +7,9 @@ stages:
       md5: ea59123b44c5be2a50ed7d31336b0e52.dir
       size: 11788442
       nfiles: 2
+    - path: app.py
+      md5: c30539438a9ff8345d07fb2a1835415e
+      size: 3981
     - path: schema_training.json
       md5: 1cd968711289d509966c2a949cedbc23
       size: 1067

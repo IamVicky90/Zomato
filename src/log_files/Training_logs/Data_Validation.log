@@ -277,3 +277,21 @@
 2021-06-14 23:04:09		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
 2021-06-14 23:04:09		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
 2021-06-14 23:04:09		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-15 12:22:54		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-15 12:22:54		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-15 12:22:54		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-15 12:22:54		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-15 12:22:54		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-15 12:22:54		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-15 12:22:54		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-15 12:22:55		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-15 12:22:55		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-15 12:33:46		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-15 12:33:46		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-15 12:33:46		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-15 12:33:46		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-15 12:33:46		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-15 12:33:46		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-15 12:33:46		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-15 12:33:46		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-15 12:33:47		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
