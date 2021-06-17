@@ -282,3 +282,21 @@
 2021-06-16 00:51:14		INFO: Sucessfully created the cluster column
 2021-06-16 00:51:14		INFO: Sucessfully dump the kmeans.sav model in /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/kmeans.sav
 2021-06-16 00:51:16		INFO: Sucessfully created the cluster column
+2021-06-17 23:07:59		INFO: Sucessfully completed the wcss list!
+2021-06-17 23:07:59		INFO: Sucessfully saved the wcss image at src/Training_Service/wcss_image.png
+2021-06-17 23:07:59		INFO: The total number of clusters created in this dataframe is/are 3
+2021-06-17 23:07:59		INFO: Sucessfully created the cluster column
+2021-06-17 23:07:59		INFO: Sucessfully dump the kmeans.sav model in /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/kmeans.sav
+2021-06-17 23:08:13		INFO: Sucessfully created the cluster column
+2021-06-17 23:45:56		INFO: Sucessfully completed the wcss list!
+2021-06-17 23:45:56		INFO: Sucessfully saved the wcss image at src/Training_Service/wcss_image.png
+2021-06-17 23:45:56		INFO: The total number of clusters created in this dataframe is/are 3
+2021-06-17 23:45:56		INFO: Sucessfully created the cluster column
+2021-06-17 23:45:56		INFO: Sucessfully dump the kmeans.sav model in /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/kmeans.sav
+2021-06-17 23:46:03		INFO: Sucessfully created the cluster column
+2021-06-17 23:46:44		INFO: Sucessfully completed the wcss list!
+2021-06-17 23:46:44		INFO: Sucessfully saved the wcss image at src/Training_Service/wcss_image.png
+2021-06-17 23:46:44		INFO: The total number of clusters created in this dataframe is/are 3
+2021-06-17 23:46:44		INFO: Sucessfully created the cluster column
+2021-06-17 23:46:44		INFO: Sucessfully dump the kmeans.sav model in /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/kmeans.sav
+2021-06-17 23:46:48		INFO: Sucessfully created the cluster column

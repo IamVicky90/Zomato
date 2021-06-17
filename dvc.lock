@@ -8,8 +8,8 @@ stages:
       size: 11788442
       nfiles: 2
     - path: app.py
-      md5: 311b0aa73c381b94ecca9da65507c9aa
-      size: 4121
+      md5: 2eb71ad1c5da2070a9fb5e87985d2f37
+      size: 4227
     - path: schema_training.json
       md5: 1cd968711289d509966c2a949cedbc23
       size: 1067
@@ -26,8 +26,8 @@ stages:
       md5: 0956ac74841ff4da5e476ecc20d2db31
       size: 4040
     - path: src/Training_Service/model_operations/model_ops.py
-      md5: a4921407e99035de13c3ecfb049227b6
-      size: 1963
+      md5: ed9441ddef9730f7a1d0f4e27313d4a0
+      size: 6591
     - path: src/logger/logger.py
       md5: f772aeefe617fbfa19810cadd93f6409
       size: 1233
