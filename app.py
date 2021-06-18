@@ -67,9 +67,9 @@ def train():
         x_train,x_test,y_train,y_test=process.split_into_train_test(final_x_train,Y,test_size=config_file['data_preprocessing']['train_test_split']['test_size'],random_state=config_file['data_preprocessing']['train_test_split']['random_state'])
         cluster_obj=cluster.cluster()
         x_train_with_cluster=cluster_obj.create_clusters(x_train)
-        model_obs_obj=model_ops.model_operations()
-        model_obs_obj.train_model_with_clusters(x_train_with_cluster,y_train)
         x_test_with_cluster_column=cluster_obj.predict_clusters(x_test)
+        model_obs_obj=model_ops.model_operations()
+        model_obs_obj.train_model_with_clusters(x_train_with_cluster,y_train,x_test_with_cluster_column,y_test)
         y_pred_random_forest,y_pred_random_forest,y_true_random_forest_XGBOOST_Regressor,y_pred_random_forest_XGBOOST_Regressor=model_obs_obj.predict_model_with_cluster(x_test_with_cluster_column,y_test)
         return '<h1>Cool! Training Completed Sucessfully!</h1>'
     else:

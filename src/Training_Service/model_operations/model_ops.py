@@ -1,38 +1,42 @@
 from src.logger import logger
-from sklearn.ensemble import RandomForestRegressor
 import pickle
 import os
-from xgboost import XGBRegressor
 from src.Training_Service.metrics import metrics
-import shutil,os
+from src.Training_Service.Hyperparameter import hyperparameter_tunning
+import os
 class model_operations:
     def __init__(self):
         self.log=logger.log()
-        self.rn=RandomForestRegressor()
-        self.xg_model=XGBRegressor()
         self.metrics_obj=metrics.measure_metrics()
-    def train_model_with_clusters(self,x,y):
+        self.tunner=hyperparameter_tunning.hyperparameter()
+    def train_model_with_clusters(self,x,y,x_test,y_test):
         '''From EDA in Jupyter Notebook we see that RandomForestRegressor and XGBRegressor are predicting well so we use only these two models for the prediction'''
         self.log.log_writer('Model Operations started!','model_operations.log')
         for cluster_no in x['cluster'].unique():
-            cluster_x=x[x['cluster']==cluster_no]
-            cluster_y=y[cluster_x.index]
+            cluster_x_Train=x[x['cluster']==cluster_no]
+            cluster_y_Train=y[cluster_x_Train.index]
+            cluster_x_test=x_test[x_test['cluster']==cluster_no]
+            cluster_y_test=y_test[cluster_x_test.index]
             try:
-                self.rn.fit(cluster_x.drop(['cluster'],axis=1),cluster_y)
-                self.xg_model.fit(cluster_x.to_numpy(),cluster_y.to_numpy())
+                self.rn=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test)
+                # self.rf=RandomForestRegressor()
+                self.rf.fit(cluster_x_Train.drop(['cluster'],axis=1),cluster_y_Train)
                 model_name_reandom_forest= f'random_forest_regressor_cluster_no_{cluster_no}.sav'
                 path_random=os.path.join(os.getcwd(),'models',model_name_reandom_forest)
-                pickle.dump(self.rn, open(path_random, 'wb'))
+                pickle.dump(self.rf, open(path_random, 'wb'))
                 self.log.log_writer(f'Successfully saved the {model_name_reandom_forest} at path {path_random}','model_operations.log')
             except Exception as e:
                 try:
                     self.log.log_writer(f'Could not saved the {model_name_reandom_forest} at path {path_random} error: {str(e)}','model_operations.log','ERROR')
                 except Exception as NameError:
                     self.log.log_writer(f'NameError occured in train_model_with_clusters','model_operations.log','ERROR')
-            try:  
+            try:
+                self.xg_model=self.rn=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test)  
+                # self.xg_model=XGBRegressor()
+                self.xg_model.fit(cluster_x_Train.to_numpy(),cluster_y_Train.to_numpy())
                 model_name_xgboost= f'XGBOOST_Regressor_cluster_no_{cluster_no}.sav'
                 path_xgboost=os.path.join(os.getcwd(),'models',model_name_xgboost)
-                pickle.dump(self.rn, open(path_xgboost, 'wb'))
+                pickle.dump(self.xg_model, open(path_xgboost, 'wb'))
                 self.log.log_writer(f'Successfully saved the {model_name_xgboost} at path {path_xgboost}','model_operations.log')
             except Exception as e:
                 try:
@@ -77,7 +81,6 @@ class model_operations:
 
             if XGBOOST_Regressor_metrics_r2_score>random_forest_r2_score:
                 try:
-                    print("@@")
                     os.remove(os.path.join(path,random_forest_file))
                     self.log.log_writer(f'Sucessfully, remove the file {random_forest_file} because it has low r2_score as compared to xgboost','model_operations.log','Warning')
                 except Exception as e:

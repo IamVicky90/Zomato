@@ -204,3 +204,34 @@
 2021-06-17 23:46:49		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_1.sav
 2021-06-17 23:46:49		INFO: The r2_score for random_forest is -0.36277500000000007 and xgboost regressor is -0.36277500000000007 for cluster no 1
 2021-06-17 23:46:49		Warning: Sucessfully, remove the file XGBOOST_Regressor_cluster_no_1.sav because it has low r2_score as compared to random forest
+2021-06-18 17:52:58		INFO: Model Operations started!
+2021-06-18 17:52:58		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 17:52:58		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 17:52:58		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 17:52:58		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 17:52:58		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 17:52:58		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:25:47		INFO: Model Operations started!
+2021-06-18 18:25:47		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:25:47		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:25:47		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:25:47		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:25:47		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:25:47		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:26:41		INFO: Model Operations started!
+2021-06-18 18:26:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:26:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:26:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:26:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:26:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:26:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:31:41		INFO: Model Operations started!
+2021-06-18 18:31:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:31:41		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:31:42		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:31:42		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:31:42		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:31:42		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 18:35:02		INFO: Model Operations started!
+2021-06-18 18:36:37		INFO: Model Operations started!
+2021-06-18 18:37:40		INFO: Model Operations started!

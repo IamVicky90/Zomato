@@ -11,3 +11,5 @@ stages:
     - schema_training.json
     - src/Training_Service/Cluster_Data/cluster.py
     - src/Training_Service/model_operations/model_ops.py
+    - src/Training_Service/metrics/metrics.py
+    - src/Training_Service/Hyperparameter/hyperparameter_tunning.py
