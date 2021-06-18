@@ -236,3 +236,34 @@
 2021-06-18 18:36:37		INFO: Model Operations started!
 2021-06-18 18:37:40		INFO: Model Operations started!
 2021-06-18 19:09:12		INFO: Model Operations started!
+2021-06-18 23:05:40		INFO: Model Operations started!
+2021-06-18 23:09:36		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:12:36		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:14:22		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:16:05		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:17:34		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:19:04		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:27:33		INFO: Model Operations started!
+2021-06-18 23:30:13		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:32:51		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:34:28		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:37:00		INFO: Model Operations started!
+2021-06-18 23:39:56		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:42:01		INFO: Model Operations started!
+2021-06-18 23:42:02		INFO: Model Operations started!
+2021-06-18 23:48:57		INFO: Model Operations started!
+2021-06-18 23:52:21		INFO: Successfully saved the random_forest_regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_0.sav
+2021-06-18 23:55:59		ERROR: NameError occured in train_model_with_clusters
+2021-06-18 23:58:47		INFO: Model Operations started!
+2021-06-19 00:01:38		INFO: Model Operations started!
+2021-06-19 00:07:54		INFO: Model Operations started!
+2021-06-19 00:08:43		INFO: Model Operations started!
+2021-06-19 00:12:22		INFO: Successfully saved the random_forest_regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_0.sav
+2021-06-19 00:16:39		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_0.sav
+2021-06-19 00:19:11		INFO: Successfully saved the random_forest_regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_2.sav
+2021-06-19 00:21:45		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_2.sav
+2021-06-19 00:24:12		INFO: Successfully saved the random_forest_regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_1.sav
+2021-06-19 00:26:32		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_1.sav
+2021-06-19 01:02:18		INFO: Model Operations started!
+2021-06-19 01:05:57		INFO: Successfully saved the random_forest_regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_0.sav
+2021-06-19 01:05:57		ERROR: NameError occured in train_model_with_clusters

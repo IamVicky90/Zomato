@@ -745,3 +745,138 @@
 2021-06-18 19:08:59		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
 2021-06-18 19:08:59		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
 2021-06-18 19:08:59		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:05:27		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:05:27		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:05:27		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:05:27		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:05:27		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:05:27		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:05:27		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:05:27		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:05:28		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:27:21		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:27:21		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:27:21		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:27:21		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:27:21		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:27:21		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:27:21		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:27:21		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:27:21		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:35:17		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:35:17		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:35:17		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:35:17		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:35:17		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:35:17		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:35:17		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:35:17		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:35:18		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:36:50		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:36:50		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:36:50		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:36:50		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:36:50		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:36:50		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:36:50		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:36:50		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:36:51		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:41:43		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:41:43		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:41:43		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:41:43		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:41:43		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:41:43		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:41:43		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:41:43		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:41:44		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:41:48		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:41:48		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:41:48		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:41:48		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:41:48		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:41:48		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:41:48		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:41:48		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:41:49		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:48:11		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:48:11		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:48:11		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:48:11		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:48:11		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:48:11		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:48:11		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:48:11		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:48:11		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:48:47		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:48:47		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:48:47		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:48:47		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:48:47		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:48:47		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:48:47		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:48:47		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:48:48		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-18 23:58:34		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-18 23:58:34		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-18 23:58:34		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-18 23:58:34		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-18 23:58:34		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-18 23:58:34		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-18 23:58:34		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:58:34		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-18 23:58:35		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-19 00:01:26		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-19 00:01:26		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-19 00:01:26		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-19 00:01:26		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-19 00:01:26		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-19 00:01:26		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-19 00:01:26		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:01:27		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:01:27		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-19 00:07:43		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-19 00:07:43		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-19 00:07:43		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-19 00:07:43		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-19 00:07:43		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-19 00:07:43		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-19 00:07:43		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:07:44		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:07:44		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-19 00:08:32		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-19 00:08:32		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-19 00:08:33		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-19 00:08:33		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-19 00:08:33		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-19 00:08:33		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-19 00:08:33		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:08:33		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:08:33		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-19 00:57:19		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-19 00:57:19		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-19 00:57:19		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-19 00:57:19		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-19 00:57:19		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-19 00:57:19		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-19 00:57:19		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:57:20		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:57:20		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-19 00:58:56		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-19 00:58:56		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-19 00:58:56		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-19 00:58:56		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-19 00:58:56		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-19 00:58:56		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-19 00:58:56		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:58:56		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 00:58:57		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string
+2021-06-19 01:02:04		INFO: Regex Matches for file zomato_16052019_12345.csv
+2021-06-19 01:02:04		Warning: LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file zomato_16052019_12345.csv and Copy to Bad Data Folder
+2021-06-19 01:02:04		INFO: Sucessfully copy the file zomato_16052019_12345.csv to Bad_Data_Folder
+2021-06-19 01:02:04		INFO: Regex Matches for file zomato_16052019_204900.csv
+2021-06-19 01:02:04		INFO: LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file zomato_16052019_204900.csv and copy to Good Data Folder
+2021-06-19 01:02:05		INFO: Sucessfully copy the file zomato_16052019_204900.csv to Good_Data_Folder
+2021-06-19 01:02:05		INFO: Number of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 01:02:05		INFO: Name of Columns of file zomato_16052019_204900.csv Matched with the schema file
+2021-06-19 01:02:05		INFO: The NULL values in file zomato_16052019_204900.csv (if present) is sucessfully converted to NaN string

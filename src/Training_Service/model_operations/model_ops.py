@@ -9,8 +9,9 @@ class model_operations:
         self.log=logger.log()
         self.metrics_obj=metrics.measure_metrics()
         self.tunner=hyperparameter_tunning.hyperparameter()
-    def train_model_with_clusters(self,x,y,x_test,y_test):
-        '''From EDA in Jupyter Notebook we see that RandomForestRegressor and XGBRegressor are predicting well so we use only these two models for the prediction'''
+    def train_model_with_clusters_with_hyperparameter_tuning(self,x,y,x_test,y_test,parameters_random_forest_grid,cv_random_forest_grid,verbose_random_forest_grid,parameters_random_forest_random,cv_random_forest_random,verbose_random_forest_random,
+    parameters_xgboost_grid,cv_xgboost_grid,verbose_xgboost_grid,parameters_xgboost_random,cv_xgboost_random,verbose_xgboost_random):
+        '''From EDA in Jupyter Notebook we see that RandomForestRegressor and XGBRegressor are predicting well so we use only these two models for the prediction and hyperparameters'''
         self.log.log_writer('Model Operations started!','model_operations.log')
         for cluster_no in x['cluster'].unique():
             cluster_x_Train=x[x['cluster']==cluster_no]
@@ -18,7 +19,7 @@ class model_operations:
             cluster_x_test=x_test[x_test['cluster']==cluster_no]
             cluster_y_test=y_test[cluster_x_test.index]
             try:
-                self.rn=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test)
+                self.rf=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test,parameters_random_forest_grid,cv_random_forest_grid,verbose_random_forest_grid,parameters_random_forest_random,cv_random_forest_random,verbose_random_forest_random)
                 # self.rf=RandomForestRegressor()
                 self.rf.fit(cluster_x_Train.drop(['cluster'],axis=1),cluster_y_Train)
                 model_name_reandom_forest= f'random_forest_regressor_cluster_no_{cluster_no}.sav'
@@ -31,7 +32,7 @@ class model_operations:
                 except Exception as NameError:
                     self.log.log_writer(f'NameError occured in train_model_with_clusters','model_operations.log','ERROR')
             try:
-                self.xg_model=self.rn=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test)  
+                self.xg_model=self.rn=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test,parameters_xgboost_grid,cv_xgboost_grid,verbose_xgboost_grid,parameters_xgboost_random,cv_xgboost_random,verbose_xgboost_random)  
                 # self.xg_model=XGBRegressor()
                 self.xg_model.fit(cluster_x_Train.to_numpy(),cluster_y_Train.to_numpy())
                 model_name_xgboost= f'XGBOOST_Regressor_cluster_no_{cluster_no}.sav'

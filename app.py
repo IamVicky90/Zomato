@@ -69,8 +69,20 @@ def train():
         x_train_with_cluster=cluster_obj.create_clusters(x_train)
         x_test_with_cluster_column=cluster_obj.predict_clusters(x_test)
         model_obs_obj=model_ops.model_operations()
-        model_obs_obj.train_model_with_clusters(x_train_with_cluster,y_train,x_test_with_cluster_column,y_test)
-        y_pred_random_forest,y_pred_random_forest,y_true_random_forest_XGBOOST_Regressor,y_pred_random_forest_XGBOOST_Regressor=model_obs_obj.predict_model_with_cluster(x_test_with_cluster_column,y_test)
+        parameters_random_forest_grid=config_file['hyperparameter_tunning']['random_forest_hyperparameters']['parameters']
+        cv_random_forest_grid=config_file['hyperparameter_tunning']['random_forest_hyperparameters']['GridSearchCV']['cv']
+        verbose_random_forest_grid=config_file['hyperparameter_tunning']['random_forest_hyperparameters']['GridSearchCV']['verbose']
+        parameters_random_forest_random=config_file['hyperparameter_tunning']['random_forest_hyperparameters']['parameters']
+        cv_random_forest_random=config_file['hyperparameter_tunning']['random_forest_hyperparameters']['RandomizedSearchCV']['cv']
+        verbose_random_forest_random=config_file['hyperparameter_tunning']['random_forest_hyperparameters']['RandomizedSearchCV']['verbose']
+        parameters_xgboost_grid=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['GridSearchCV']['cv']
+        cv_xgboost_grid=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['GridSearchCV']['cv']
+        verbose_xgboost_grid=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['GridSearchCV']['cv']
+        parameters_xgboost_random=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['RandomizedSearchCV']['cv']
+        cv_xgboost_random=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['RandomizedSearchCV']['cv']
+        verbose_xgboost_random=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['RandomizedSearchCV']['cv']
+        model_obs_obj.train_model_with_clusters_with_hyperparameter_tuning(x_train_with_cluster,y_train,x_test_with_cluster_column,y_test,parameters_random_forest_grid,cv_random_forest_grid,verbose_random_forest_grid,parameters_random_forest_random,cv_random_forest_random,verbose_random_forest_random,parameters_xgboost_grid,cv_xgboost_grid,verbose_xgboost_grid,parameters_xgboost_random,cv_xgboost_random,verbose_xgboost_random)
+        model_obs_obj.predict_model_with_cluster(x_test_with_cluster_column,y_test)
         
         return '<h1>Cool! Training Completed Sucessfully!</h1>'
     else:
