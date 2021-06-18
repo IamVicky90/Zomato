@@ -65,26 +65,12 @@ class hyperparameter:
     def compute_random_forest_hyperparameters(self,x_train,y_train,x_test,y_test):
         rf=RandomForestRegressor()
         self.log.log_writer('Random_Forest_hyperparameter_training start','hyperparameter_training.log')
-        # Number of trees in random forest
-        # n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
-        # # Number of features to consider at every split
-        # max_features = ['auto', 'sqrt']
-        # # Maximum number of levels in tree
-        max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
-        max_depth.append(None)
-        # # Minimum number of samples required to split a node
-        # min_samples_split = [2, 5, 10]
-        # # Minimum number of samples required at each leaf node
-        # min_samples_leaf = [1, 2, 4]
-        # # Method of selecting samples for training each tree
-        # bootstrap = [True, False]
         # # Create the params
-        parameters = {'n_estimators': [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)],
-                    'max_features': ['auto', 'sqrt'],
-                    'max_depth': [int(x) for x in np.linspace(10, 110, num = 11)]+[None],
-                    'min_samples_split': [2, 5, 10],
-                    'min_samples_leaf': [1, 2, 4],
-                    'bootstrap': [True, False]}
+        parameters = { 
+            'n_estimators': [200, 500],
+            'max_features': ['auto', 'sqrt', 'log2'],
+            'max_depth' : [4,5,6,7,8],
+            'criterion' :['gini', 'entropy']}
         cv=5
         verbose=3
         grid=GridSearchCV(estimator=rf,param_grid=parameters,cv=cv,verbose=verbose) # initialize the GridSearchCV
@@ -102,9 +88,8 @@ class hyperparameter:
         n_estimators_grid = grid.best_params_['n_estimators']
         max_features_grid = grid.best_params_['max_features']
         max_depth_grid = grid.best_params_['max_depth']
-        min_samples_split_grid = grid.best_params_['min_samples_split']
-        min_samples_leaf_grid = grid.best_params_['min_samples_leaf']
         bootstrap_grid = grid.best_params_['bootstrap']
+        criterion_grid = grid.best_params_['criterion']
         
         random=RandomizedSearchCV(estimator=rf,param_distributions=parameters,cv=5,verbose=3) # initialize the RandomizedSearchCV
         try:
@@ -119,12 +104,11 @@ class hyperparameter:
         n_estimators_random = random.best_params_['n_estimators']
         max_features_random = random.best_params_['max_features']
         max_depth_random = random.best_params_['max_depth']
-        min_samples_split_random = random.best_params_['min_samples_split']
-        min_samples_leaf_random = random.best_params_['min_samples_leaf']
         bootstrap_random = random.best_params_['bootstrap']
+        criterion_random = grid.best_params_['criterion']
         if r2_score_grid>r2_score_random:
             self.log.log_writer(f'Final params for Random Forest are {grid.get_params()} by GridSearchCV','hyperparameter_training.log')
-            return RandomForestRegressor(n_estimators=n_estimators_grid,max_features=max_features_grid,max_depth=max_depth_grid,min_samples_split=min_samples_split_grid,min_samples_leaf=min_samples_leaf_grid,bootstrap=bootstrap_grid)
+            return RandomForestRegressor(n_estimators=n_estimators_grid,max_features=max_features_grid,max_depth=max_depth_grid,bootstrap=bootstrap_grid,criterion=criterion_grid)
         else:
             self.log.log_writer(f'Final params for Random Forest are {random.get_params()} by RandomizedSearchCV','hyperparameter_training.log')
-            return RandomForestRegressor(n_estimators=n_estimators_random,max_features=max_features_random,max_depth_random=max_depth_random,min_samples_split=min_samples_split_random,min_samples_leaf=min_samples_leaf_random,bootstrap=bootstrap_random)
+            return RandomForestRegressor(n_estimators=n_estimators_random,max_features=max_features_random,max_depth_random=max_depth_random,bootstrap=bootstrap_random,criterion=criterion_random)

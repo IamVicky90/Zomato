@@ -8,8 +8,8 @@ stages:
       size: 11788442
       nfiles: 2
     - path: app.py
-      md5: 036c7035b5b342bd242d969f1f981eef
-      size: 4261
+      md5: f86e85c229bbed8590c8d98c318b529f
+      size: 4270
     - path: schema_training.json
       md5: 1cd968711289d509966c2a949cedbc23
       size: 1067
