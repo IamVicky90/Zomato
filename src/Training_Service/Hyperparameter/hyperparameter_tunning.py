@@ -70,7 +70,7 @@ class hyperparameter:
             'n_estimators': [200, 500],
             'max_features': ['auto', 'sqrt', 'log2'],
             'max_depth' : [4,5,6,7,8],
-            'criterion' :['gini', 'entropy']}
+            }
         cv=5
         verbose=3
         grid=GridSearchCV(estimator=rf,param_grid=parameters,cv=cv,verbose=verbose) # initialize the GridSearchCV
@@ -89,7 +89,6 @@ class hyperparameter:
         max_features_grid = grid.best_params_['max_features']
         max_depth_grid = grid.best_params_['max_depth']
         bootstrap_grid = grid.best_params_['bootstrap']
-        criterion_grid = grid.best_params_['criterion']
         
         random=RandomizedSearchCV(estimator=rf,param_distributions=parameters,cv=5,verbose=3) # initialize the RandomizedSearchCV
         try:
@@ -105,10 +104,9 @@ class hyperparameter:
         max_features_random = random.best_params_['max_features']
         max_depth_random = random.best_params_['max_depth']
         bootstrap_random = random.best_params_['bootstrap']
-        criterion_random = grid.best_params_['criterion']
         if r2_score_grid>r2_score_random:
             self.log.log_writer(f'Final params for Random Forest are {grid.get_params()} by GridSearchCV','hyperparameter_training.log')
-            return RandomForestRegressor(n_estimators=n_estimators_grid,max_features=max_features_grid,max_depth=max_depth_grid,bootstrap=bootstrap_grid,criterion=criterion_grid)
+            return RandomForestRegressor(n_estimators=n_estimators_grid,max_features=max_features_grid,max_depth=max_depth_grid,bootstrap=bootstrap_grid)
         else:
             self.log.log_writer(f'Final params for Random Forest are {random.get_params()} by RandomizedSearchCV','hyperparameter_training.log')
-            return RandomForestRegressor(n_estimators=n_estimators_random,max_features=max_features_random,max_depth_random=max_depth_random,bootstrap=bootstrap_random,criterion=criterion_random)
+            return RandomForestRegressor(n_estimators=n_estimators_random,max_features=max_features_random,max_depth_random=max_depth_random,bootstrap=bootstrap_random)
