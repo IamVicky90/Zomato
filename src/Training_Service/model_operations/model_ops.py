@@ -32,9 +32,9 @@ class model_operations:
                 except Exception as NameError:
                     self.log.log_writer(f'NameError occured in train_model_with_clusters','model_operations.log','ERROR')
             try:
-                self.xg_model=self.rn=self.tunner.compute_random_forest_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test,parameters_xgboost_grid,cv_xgboost_grid,verbose_xgboost_grid,parameters_xgboost_random,cv_xgboost_random,verbose_xgboost_random)  
-                # self.xg_model=XGBRegressor()
-                self.xg_model.fit(cluster_x_Train.to_numpy(),cluster_y_Train.to_numpy())
+                self.xg_model=self.rn=self.tunner.compute_xgboost_hyperparameters(cluster_x_Train,cluster_y_Train,cluster_x_test,cluster_y_test,parameters_xgboost_grid,cv_xgboost_grid,verbose_xgboost_grid,parameters_xgboost_random,cv_xgboost_random,verbose_xgboost_random)  
+                # self.xg_model=XGBRegressor() 
+                self.xg_model.fit(cluster_x_Train.drop(['cluster'],axis=1).to_numpy(),cluster_y_Train.to_numpy())
                 model_name_xgboost= f'XGBOOST_Regressor_cluster_no_{cluster_no}.sav'
                 path_xgboost=os.path.join(os.getcwd(),'models',model_name_xgboost)
                 pickle.dump(self.xg_model, open(path_xgboost, 'wb'))
@@ -44,11 +44,7 @@ class model_operations:
                     self.log.log_writer(f'Could not saved the {model_name_xgboost} at path {path_xgboost} error: {str(e)}','model_operations.log','ERROR')
                 except Exception as NameError:
                     self.log.log_writer(f'NameError occured in train_model_with_clusters','model_operations.log','ERROR')
-    def predict_model_with_cluster(self,x_test,y_test):
-        y_true_random_forest=[]
-        y_pred_random_forest=[]
-        y_true_random_forest_XGBOOST_Regressor=[]
-        y_pred_random_forest_XGBOOST_Regressor=[]
+    def selct_best_model_with_cluster(self,x_test,y_test):
         for cluster_no in x_test['cluster'].unique():
             cluster_x=x_test[x_test['cluster']==cluster_no]
             cluster_y=y_test[cluster_x.index]
@@ -59,19 +55,15 @@ class model_operations:
                         try:
                             model_random_forest=pickle.load(open(os.path.join(path,file),'rb'))
                             predict_random_forest=model_random_forest.predict(cluster_x.drop(['cluster'],axis=1).to_numpy())
-                            y_true_random_forest=y_true_random_forest+cluster_y.to_numpy().tolist()
-                            y_pred_random_forest=y_pred_random_forest+predict_random_forest.tolist()
+                            
                             random_forest_file=file
                             self.log.log_writer(f'Sucessfully load predict the model {random_forest_file}','model_operations.log')
                         except Exception as e:
                             self.log.log_writer(f'Couldnot load predict the model {random_forest_file} error {str(e)}','model_operations.log','Error')
-
                     elif 'XGBOOST_Regressor' in file:
                         try:
                             model_XGBOOST_Regressor=pickle.load(open(os.path.join(path,file),'rb'))
                             predict_model_XGBOOST_Regressor=model_XGBOOST_Regressor.predict(cluster_x.drop(['cluster'],axis=1).to_numpy())
-                            y_true_random_forest_XGBOOST_Regressor=y_true_random_forest_XGBOOST_Regressor+cluster_y.to_numpy().tolist()
-                            y_pred_random_forest_XGBOOST_Regressor=y_pred_random_forest_XGBOOST_Regressor+predict_model_XGBOOST_Regressor.tolist()
                             XGBOOST_Regressor_file=file
                             self.log.log_writer(f'Sucessfully load predict the model {XGBOOST_Regressor_file}','model_operations.log')
                         except Exception as e:
@@ -86,13 +78,10 @@ class model_operations:
                     self.log.log_writer(f'Sucessfully, remove the file {random_forest_file} because it has low r2_score as compared to xgboost','model_operations.log','Warning')
                 except Exception as e:
                     self.log.log_writer(f'Couldnot remove the file {random_forest_file} error {str(e)}','model_operations.log','Error')
-
             else:
                 try:
                     os.remove(os.path.join(path,XGBOOST_Regressor_file))
                     self.log.log_writer(f'Sucessfully, remove the file {XGBOOST_Regressor_file} because it has low r2_score as compared to random forest','model_operations.log','Warning')
                 except Exception as e:
                     self.log.log_writer(f'Couldnot remove the file {XGBOOST_Regressor_file} error {str(e)}','model_operations.log','Error')
-
-        return y_pred_random_forest,y_pred_random_forest,y_true_random_forest_XGBOOST_Regressor,y_pred_random_forest_XGBOOST_Regressor
         

@@ -1,136 +1,66 @@
-2021-06-18 18:25:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:25:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:25:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:25:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:25:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:25:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:26:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:26:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:26:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:26:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:26:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:26:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:31:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:31:41		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:31:42		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:31:42		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:31:42		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:31:42		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:35:02		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:36:37		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:36:37		INFO: Random Forest Parameters for training: {'n_estimators': [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000], 'max_features': ['auto', 'sqrt'], 'max_depth': [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, None], 'min_samples_split': [2, 5, 10], 'min_samples_leaf': [1, 2, 4], 'bootstrap': [True, False]}, with cv = 5, verbose= 3
-2021-06-18 18:37:40		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 18:37:40		INFO: Random Forest Parameters for training: {'n_estimators': [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000], 'max_features': ['auto', 'sqrt'], 'max_depth': [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, None], 'min_samples_split': [2, 5, 10], 'min_samples_leaf': [1, 2, 4], 'bootstrap': [True, False]}, with cv = 5, verbose= 3
-2021-06-18 19:09:12		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 19:09:12		INFO: Random Forest Parameters for training: {'n_estimators': [200, 400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000], 'max_features': ['auto', 'sqrt'], 'max_depth': [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, None], 'min_samples_split': [2, 5, 10], 'min_samples_leaf': [1, 2, 4], 'bootstrap': [True, False]}, with cv = 5, verbose= 3
-2021-06-18 23:05:40		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:05:40		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:09:36		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:09:36		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:09:36		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:12:36		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:12:36		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:12:36		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:14:22		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:14:22		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:14:22		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:16:05		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:16:05		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:16:05		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:17:34		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:17:34		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:17:34		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:19:04		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:27:33		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:27:33		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:30:13		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:30:13		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:30:13		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:32:51		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:32:51		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:32:51		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:34:28		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:34:28		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:34:28		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:37:00		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:37:00		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:39:56		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:39:56		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:39:56		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:42:01		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:42:01		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:42:02		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:42:02		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:46:41		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:46:42		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:48:57		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:48:57		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:51:48		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:52:20		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-18 23:52:20		INFO: Random Forest compute_score resut is r2_score is: 0.5749461110672625, mean squared error is 17708.302153379613,mean absolute error is 106.22122606079895
-2021-06-18 23:52:20		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
-2021-06-18 23:52:21		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:52:21		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:55:08		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:55:59		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-18 23:55:59		INFO: Random Forest compute_score resut is r2_score is: 0.6114556157767601, mean squared error is 16187.268332257867,mean absolute error is 101.0203638480746
-2021-06-18 23:55:59		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by RandomizedSearchCV
-2021-06-18 23:55:59		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:55:59		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-18 23:57:35		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-18 23:58:47		INFO: Random_Forest_hyperparameter_training start
-2021-06-18 23:58:47		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:01:38		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:01:38		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:04:15		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:05:27		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:05:27		INFO: Random Forest compute_score resut is r2_score is: 0.6106699695830917, mean squared error is 16219.999382473796,mean absolute error is 101.43777402344516
-2021-06-19 00:05:27		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by RandomizedSearchCV
-2021-06-19 00:07:54		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:07:54		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:08:43		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:08:43		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:11:16		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:12:18		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:12:19		INFO: Random Forest compute_score resut is r2_score is: 0.6153745437592952, mean squared error is 16024.000655760858,mean absolute error is 100.64708108139358
-2021-06-19 00:12:19		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by RandomizedSearchCV
-2021-06-19 00:12:22		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:12:22		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:15:18		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:16:37		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:16:37		INFO: Random Forest compute_score resut is r2_score is: 0.6071964907318155, mean squared error is 16364.709064289003,mean absolute error is 101.750710415434
-2021-06-19 00:16:37		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
-2021-06-19 00:16:39		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:16:39		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:18:32		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:19:10		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:19:10		INFO: Random Forest compute_score resut is r2_score is: 0.8999109370403872, mean squared error is 9525.004627933407,mean absolute error is 78.60320874071425
-2021-06-19 00:19:10		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by RandomizedSearchCV
-2021-06-19 00:19:11		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:19:11		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:21:11		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:21:44		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:21:44		INFO: Random Forest compute_score resut is r2_score is: 0.8741842932783392, mean squared error is 11973.288123139857,mean absolute error is 88.57233044700561
-2021-06-19 00:21:44		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
-2021-06-19 00:21:45		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:21:45		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:23:29		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:24:10		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:24:10		INFO: Random Forest compute_score resut is r2_score is: -0.241325666666667, mean squared error is 24826.51333333334,mean absolute error is 131.53333333333333
-2021-06-19 00:24:10		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by RandomizedSearchCV
-2021-06-19 00:24:12		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 00:24:12		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3
-2021-06-19 00:25:57		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 00:26:31		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 00:26:31		INFO: Random Forest compute_score resut is r2_score is: 0.2364601449551208, mean squared error is 15270.797100897586,mean absolute error is 107.30968253968258
-2021-06-19 00:26:31		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_iter': 10, 'n_jobs': None, 'param_distributions': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'random_state': None, 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by RandomizedSearchCV
-2021-06-19 01:02:18		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 01:02:18		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by GridSearchCV
-2021-06-19 01:05:00		INFO: fitting to GridSearchCV of Random Forest done successfully
-2021-06-19 01:05:00		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by RandomizedSearchCV
-2021-06-19 01:05:55		INFO: Random Forest fitting to RandomizedSearchCV done successfully
-2021-06-19 01:05:55		INFO: Random Forest compute_score resut is r2_score is: 0.6063622415859006, mean squared error is 16399.464977201962,mean absolute error is 101.8649555875109
-2021-06-19 01:05:55		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
-2021-06-19 01:05:57		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 01:05:57		INFO: Random_Forest_hyperparameter_training start
-2021-06-19 01:05:57		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:15:04		INFO: Random_Forest_hyperparameter_training start
+2021-06-19 22:15:04		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:17:41		INFO: fitting to GridSearchCV of Random Forest done successfully
+2021-06-19 22:17:41		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by RandomizedSearchCV
+2021-06-19 22:18:36		INFO: Random Forest fitting to RandomizedSearchCV done successfully
+2021-06-19 22:18:36		INFO: Random Forest compute_score resut is r2_score is: 0.5988452500876047, mean squared error is 16712.632695936263,mean absolute error is 103.31947181490247
+2021-06-19 22:18:36		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
+2021-06-19 22:18:39		INFO: xgboost_hyperparameter_training start
+2021-06-19 22:18:39		INFO: XGBOOST Parameters for training: {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:27:22		INFO: fitting to GridSearchCV done successfully
+2021-06-19 22:27:22		INFO: XGBOOST Parameters for training: {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, with cv = 5, verbose= 3 by RandomizedSearchCV
+2021-06-19 22:28:06		INFO: xgboost fitting to RandomizedSearchCV done successfully
+2021-06-19 22:28:06		INFO: xgboost compute_score resut is r2_score is: 0.6452337101968577, mean squared error is 14780.028643995358,mean absolute error is 89.88480711636478
+2021-06-19 22:28:06		INFO: Final params for XGBOOST are {'cv': 5, 'error_score': nan, 'estimator__objective': 'reg:squarederror', 'estimator__base_score': None, 'estimator__booster': None, 'estimator__colsample_bylevel': None, 'estimator__colsample_bynode': None, 'estimator__colsample_bytree': None, 'estimator__gamma': None, 'estimator__gpu_id': None, 'estimator__importance_type': 'gain', 'estimator__interaction_constraints': None, 'estimator__learning_rate': None, 'estimator__max_delta_step': None, 'estimator__max_depth': None, 'estimator__min_child_weight': None, 'estimator__missing': nan, 'estimator__monotone_constraints': None, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__num_parallel_tree': None, 'estimator__random_state': None, 'estimator__reg_alpha': None, 'estimator__reg_lambda': None, 'estimator__scale_pos_weight': None, 'estimator__subsample': None, 'estimator__tree_method': None, 'estimator__validate_parameters': None, 'estimator__verbosity': None, 'estimator': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None, gamma=None,
+             gpu_id=None, importance_type='gain', interaction_constraints=None,
+             learning_rate=None, max_delta_step=None, max_depth=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=None, num_parallel_tree=None,
+             random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'n_jobs': None, 'param_grid': {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
+2021-06-19 22:28:08		INFO: Random_Forest_hyperparameter_training start
+2021-06-19 22:28:08		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:29:47		INFO: fitting to GridSearchCV of Random Forest done successfully
+2021-06-19 22:29:47		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by RandomizedSearchCV
+2021-06-19 22:30:21		INFO: Random Forest fitting to RandomizedSearchCV done successfully
+2021-06-19 22:30:21		INFO: Random Forest compute_score resut is r2_score is: 0.8842815130617045, mean squared error is 11012.383281772494,mean absolute error is 84.29114791880752
+2021-06-19 22:30:21		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
+2021-06-19 22:30:21		INFO: xgboost_hyperparameter_training start
+2021-06-19 22:30:21		INFO: XGBOOST Parameters for training: {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:32:48		INFO: fitting to GridSearchCV done successfully
+2021-06-19 22:32:48		INFO: XGBOOST Parameters for training: {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, with cv = 5, verbose= 3 by RandomizedSearchCV
+2021-06-19 22:33:03		INFO: xgboost fitting to RandomizedSearchCV done successfully
+2021-06-19 22:33:03		INFO: xgboost compute_score resut is r2_score is: 0.8918543991642874, mean squared error is 10291.70738531595,mean absolute error is 71.70295229825106
+2021-06-19 22:33:03		INFO: Final params for XGBOOST are {'cv': 5, 'error_score': nan, 'estimator__objective': 'reg:squarederror', 'estimator__base_score': None, 'estimator__booster': None, 'estimator__colsample_bylevel': None, 'estimator__colsample_bynode': None, 'estimator__colsample_bytree': None, 'estimator__gamma': None, 'estimator__gpu_id': None, 'estimator__importance_type': 'gain', 'estimator__interaction_constraints': None, 'estimator__learning_rate': None, 'estimator__max_delta_step': None, 'estimator__max_depth': None, 'estimator__min_child_weight': None, 'estimator__missing': nan, 'estimator__monotone_constraints': None, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__num_parallel_tree': None, 'estimator__random_state': None, 'estimator__reg_alpha': None, 'estimator__reg_lambda': None, 'estimator__scale_pos_weight': None, 'estimator__subsample': None, 'estimator__tree_method': None, 'estimator__validate_parameters': None, 'estimator__verbosity': None, 'estimator': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None, gamma=None,
+             gpu_id=None, importance_type='gain', interaction_constraints=None,
+             learning_rate=None, max_delta_step=None, max_depth=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=None, num_parallel_tree=None,
+             random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'n_jobs': None, 'param_grid': {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
+2021-06-19 22:33:03		INFO: Random_Forest_hyperparameter_training start
+2021-06-19 22:33:03		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:34:33		INFO: fitting to GridSearchCV of Random Forest done successfully
+2021-06-19 22:34:33		INFO: Random Forest Parameters for training: {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, with cv = 5, verbose= 3 by RandomizedSearchCV
+2021-06-19 22:35:03		INFO: Random Forest fitting to RandomizedSearchCV done successfully
+2021-06-19 22:35:03		INFO: Random Forest compute_score resut is r2_score is: 0.039958243264125115, mean squared error is 19200.835134717498,mean absolute error is 115.52916666666674
+2021-06-19 22:35:03		INFO: Final params for Random Forest are {'cv': 5, 'error_score': nan, 'estimator__bootstrap': True, 'estimator__ccp_alpha': 0.0, 'estimator__criterion': 'mse', 'estimator__max_depth': None, 'estimator__max_features': 'auto', 'estimator__max_leaf_nodes': None, 'estimator__max_samples': None, 'estimator__min_impurity_decrease': 0.0, 'estimator__min_impurity_split': None, 'estimator__min_samples_leaf': 1, 'estimator__min_samples_split': 2, 'estimator__min_weight_fraction_leaf': 0.0, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__oob_score': False, 'estimator__random_state': None, 'estimator__verbose': 0, 'estimator__warm_start': False, 'estimator': RandomForestRegressor(), 'n_jobs': None, 'param_grid': {'n_estimators': [200, 500], 'max_features': ['auto', 'sqrt', 'log2'], 'max_depth': [4, 5, 6, 7, 8]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
+2021-06-19 22:35:04		INFO: xgboost_hyperparameter_training start
+2021-06-19 22:35:04		INFO: XGBOOST Parameters for training: {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, with cv = 5, verbose= 3 by GridSearchCV
+2021-06-19 22:36:17		INFO: fitting to GridSearchCV done successfully
+2021-06-19 22:36:17		INFO: XGBOOST Parameters for training: {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, with cv = 5, verbose= 3 by RandomizedSearchCV
+2021-06-19 22:36:24		INFO: xgboost fitting to RandomizedSearchCV done successfully
+2021-06-19 22:36:24		INFO: xgboost compute_score resut is r2_score is: -2.3844382504800956, mean squared error is 67688.7650096019,mean absolute error is 211.70442708333334
+2021-06-19 22:36:24		INFO: Final params for XGBOOST are {'cv': 5, 'error_score': nan, 'estimator__objective': 'reg:squarederror', 'estimator__base_score': None, 'estimator__booster': None, 'estimator__colsample_bylevel': None, 'estimator__colsample_bynode': None, 'estimator__colsample_bytree': None, 'estimator__gamma': None, 'estimator__gpu_id': None, 'estimator__importance_type': 'gain', 'estimator__interaction_constraints': None, 'estimator__learning_rate': None, 'estimator__max_delta_step': None, 'estimator__max_depth': None, 'estimator__min_child_weight': None, 'estimator__missing': nan, 'estimator__monotone_constraints': None, 'estimator__n_estimators': 100, 'estimator__n_jobs': None, 'estimator__num_parallel_tree': None, 'estimator__random_state': None, 'estimator__reg_alpha': None, 'estimator__reg_lambda': None, 'estimator__scale_pos_weight': None, 'estimator__subsample': None, 'estimator__tree_method': None, 'estimator__validate_parameters': None, 'estimator__verbosity': None, 'estimator': XGBRegressor(base_score=None, booster=None, colsample_bylevel=None,
+             colsample_bynode=None, colsample_bytree=None, gamma=None,
+             gpu_id=None, importance_type='gain', interaction_constraints=None,
+             learning_rate=None, max_delta_step=None, max_depth=None,
+             min_child_weight=None, missing=nan, monotone_constraints=None,
+             n_estimators=100, n_jobs=None, num_parallel_tree=None,
+             random_state=None, reg_alpha=None, reg_lambda=None,
+             scale_pos_weight=None, subsample=None, tree_method=None,
+             validate_parameters=None, verbosity=None), 'n_jobs': None, 'param_grid': {'num_boost_round': [10, 25, 50], 'eta': [0.05, 0.1, 0.3], 'max_depth': [3, 4, 5], 'subsample': [0.9, 1.0], 'colsample_bytree': [0.9, 1.0]}, 'pre_dispatch': '2*n_jobs', 'refit': True, 'return_train_score': False, 'scoring': None, 'verbose': 3} by GridSearchCV
