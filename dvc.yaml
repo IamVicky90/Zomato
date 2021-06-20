@@ -1,5 +1,5 @@
 stages:
-  training_service:
+  training_and_prediction_service:
     cmd: python app.py
     deps:
     - app.py
@@ -13,3 +13,6 @@ stages:
     - src/Training_Service/model_operations/model_ops.py
     - src/Training_Service/metrics/metrics.py
     - src/Training_Service/Hyperparameter/hyperparameter_tunning.py
+    - Prediction_Batch_files
+    - src/Prediction_Service/Data_Validation/Prediction_Data_Validation.py
+    - schema_prediction.json

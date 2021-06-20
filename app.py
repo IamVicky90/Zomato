@@ -3,7 +3,8 @@ from src.Training_Service.db import db_operations
 from src.Training_Service.Data_Preprocessing import preprocessing
 from src.Training_Service.Cluster_Data import cluster
 from src.Training_Service.model_operations import model_ops
-from flask import Flask, render_template, jsonify,request,redirect,url_for
+from flask import Flask, render_template, request,redirect,url_for
+from src.Prediction_Service.Data_Validation import Prediction_Data_Validation
 import os
 import shutil
 import sys
@@ -85,6 +86,34 @@ def train():
         model_obs_obj.selct_best_model_with_cluster(x_test_with_cluster_column,y_test)
         
         return '<h1>Cool! Training Completed Sucessfully!</h1>'
+    else:
+        return redirect(url_for('home'))
+@app.route('/predict',methods=['POST','GET'])
+def predict():
+    if request.method=='POST':
+        create_necessary_Directories()
+        prediction_path='Prediction_Batch_files'
+        files=request.files.getlist("folder")
+        for file in files:
+            if '.csv' in file.filename:
+                basepath = os.getcwd()
+                if sys.platform=='linux':
+                    file_name=file.filename.split('/')[-1]
+                elif sys.platform=='win32':
+                    file_name=file.filename.split('\\')[-1]
+                else:
+                    file_name=file.filename.split('/')[-1]
+                file_path = os.path.join(
+                basepath, prediction_path,file_name)
+                file.save(file_path)
+            else:
+                return '<h1>OOPS! There are other files too! </br> Please Enter only CSV Files Folder</h1>'
+        dv=Prediction_Data_Validation.Validate_data(prediction_path,'schema_prediction.json')
+        dv.validate_name_of_the_files()
+        dv.validate_number_of_columns()
+        dv.validate_name_of_columns()
+        dv.replace_Null_with_NAN()
+        return '<h1>Cool! Prediction Completed Sucessfully!</h1>'
     else:
         return redirect(url_for('home'))
 if __name__=='__main__':
