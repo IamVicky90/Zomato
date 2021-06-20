@@ -17,3 +17,61 @@
 2021-06-19 22:36:25		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_1.sav
 2021-06-19 22:36:25		INFO: The r2_score for random_forest is 0.30706232407407397 and xgboost regressor is -0.8287517805195104 for cluster no 1
 2021-06-19 22:36:25		Warning: Sucessfully, remove the file XGBOOST_Regressor_cluster_no_1.sav because it has low r2_score as compared to random forest
+2021-06-20 19:32:53		INFO: Model Operations started!
+2021-06-20 19:36:55		INFO: Successfully saved the random_forest_regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_0.sav
+2021-06-20 19:44:56		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_0.sav
+2021-06-20 19:47:12		INFO: Successfully saved the random_forest_regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_2.sav
+2021-06-20 19:51:22		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_2.sav
+2021-06-20 19:53:20		INFO: Successfully saved the random_forest_regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_1.sav
+2021-06-20 19:54:40		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_1.sav
+2021-06-20 19:54:40		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_0.sav
+2021-06-20 19:54:40		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_0.sav
+2021-06-20 19:54:40		INFO: The r2_score for random_forest is 0.6144537992121584 and xgboost regressor is 0.6488485178072203 for cluster no 0
+2021-06-20 19:54:40		Warning: Sucessfully, remove the file random_forest_regressor_cluster_no_0.sav because it has low r2_score as compared to xgboost
+2021-06-20 19:54:40		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_2.sav
+2021-06-20 19:54:41		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_2.sav
+2021-06-20 19:54:41		INFO: The r2_score for random_forest is 0.8726027136809523 and xgboost regressor is 0.8956322152243874 for cluster no 2
+2021-06-20 19:54:41		Warning: Sucessfully, remove the file random_forest_regressor_cluster_no_2.sav because it has low r2_score as compared to xgboost
+2021-06-20 19:54:41		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_1.sav
+2021-06-20 19:54:41		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_1.sav
+2021-06-20 19:54:41		INFO: The r2_score for random_forest is 0.12157917739040103 and xgboost regressor is -0.8287517805195104 for cluster no 1
+2021-06-20 19:54:41		Warning: Sucessfully, remove the file XGBOOST_Regressor_cluster_no_1.sav because it has low r2_score as compared to random forest
+2021-06-20 20:38:01		INFO: Model Operations started!
+2021-06-20 20:42:07		INFO: Successfully saved the random_forest_regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_0.sav
+2021-06-20 20:55:52		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_0.sav
+2021-06-20 21:04:17		INFO: Successfully saved the random_forest_regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_2.sav
+2021-06-20 21:10:43		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_2.sav
+2021-06-20 21:13:29		INFO: Successfully saved the random_forest_regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_1.sav
+2021-06-20 21:15:34		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_1.sav
+2021-06-20 21:15:34		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_0.sav
+2021-06-20 21:15:34		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_0.sav
+2021-06-20 21:15:34		INFO: The r2_score for random_forest is 0.61395254936057 and xgboost regressor is 0.6547154139233116 for cluster no 0
+2021-06-20 21:15:34		Warning: Sucessfully, remove the file random_forest_regressor_cluster_no_0.sav because it has low r2_score as compared to xgboost
+2021-06-20 21:15:34		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_2.sav
+2021-06-20 21:15:34		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_2.sav
+2021-06-20 21:15:34		INFO: The r2_score for random_forest is 0.8798377898384677 and xgboost regressor is 0.9031380763895193 for cluster no 2
+2021-06-20 21:15:34		Warning: Sucessfully, remove the file random_forest_regressor_cluster_no_2.sav because it has low r2_score as compared to xgboost
+2021-06-20 21:15:34		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_1.sav
+2021-06-20 21:15:34		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_1.sav
+2021-06-20 21:15:34		INFO: The r2_score for random_forest is 0.09452686731089888 and xgboost regressor is -0.8287517805195104 for cluster no 1
+2021-06-20 21:15:34		Warning: Sucessfully, remove the file XGBOOST_Regressor_cluster_no_1.sav because it has low r2_score as compared to random forest
+2021-06-20 23:20:33		INFO: Model Operations started!
+2021-06-20 23:23:40		INFO: Model Operations started!
+2021-06-20 23:27:11		INFO: Successfully saved the random_forest_regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_0.sav
+2021-06-20 23:35:53		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_0.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_0.sav
+2021-06-20 23:38:07		INFO: Successfully saved the random_forest_regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_2.sav
+2021-06-20 23:40:38		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_2.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_2.sav
+2021-06-20 23:42:37		INFO: Successfully saved the random_forest_regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/random_forest_regressor_cluster_no_1.sav
+2021-06-20 23:44:03		INFO: Successfully saved the XGBOOST_Regressor_cluster_no_1.sav at path /home/vicky90/End-To-End-ML-Projects-With-MLOPS/Zomato/Zomato/models/XGBOOST_Regressor_cluster_no_1.sav
+2021-06-20 23:44:03		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_0.sav
+2021-06-20 23:44:03		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_0.sav
+2021-06-20 23:44:03		INFO: The r2_score for random_forest is 0.6178715659566743 and xgboost regressor is 0.678201389841359 for cluster no 0
+2021-06-20 23:44:03		Warning: Sucessfully, remove the file random_forest_regressor_cluster_no_0.sav because it has low r2_score as compared to xgboost
+2021-06-20 23:44:03		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_2.sav
+2021-06-20 23:44:03		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_2.sav
+2021-06-20 23:44:03		INFO: The r2_score for random_forest is 0.8835109551777315 and xgboost regressor is 0.9053222365974208 for cluster no 2
+2021-06-20 23:44:03		Warning: Sucessfully, remove the file random_forest_regressor_cluster_no_2.sav because it has low r2_score as compared to xgboost
+2021-06-20 23:44:03		INFO: Sucessfully load predict the model XGBOOST_Regressor_cluster_no_1.sav
+2021-06-20 23:44:03		INFO: Sucessfully load predict the model random_forest_regressor_cluster_no_1.sav
+2021-06-20 23:44:03		INFO: The r2_score for random_forest is 0.19523625231481467 and xgboost regressor is -0.8287517805195104 for cluster no 1
+2021-06-20 23:44:03		Warning: Sucessfully, remove the file XGBOOST_Regressor_cluster_no_1.sav because it has low r2_score as compared to random forest

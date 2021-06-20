@@ -40,7 +40,7 @@ stages:
   training_and_prediction_service:
     cmd: python app.py
     deps:
-    - path: Prediction_Batch_files
+    - path: Prediction_Batch_Files
       md5: c07f070be8e634451e04050db85ecfef.dir
       size: 3730159
       nfiles: 2
@@ -49,26 +49,29 @@ stages:
       size: 11788442
       nfiles: 2
     - path: app.py
-      md5: fcaec1b7a464b40ab48d04c97e6da097
-      size: 7262
+      md5: 7865024f549b952cbe8c164214c44345
+      size: 9938
     - path: schema_prediction.json
-      md5: a12c9aeba129596ddf1ebfe4a02b76d4
-      size: 487
+      md5: cab19b98f0c50fbbd042499b2e98b7dd
+      size: 978
     - path: schema_training.json
       md5: 1cd968711289d509966c2a949cedbc23
       size: 1067
+    - path: src/Data_Preprocessing/preprocessing.py
+      md5: 2d23e0357cbbeed5e773a49b1edddf78
+      size: 9658
     - path: src/Prediction_Service/Data_Validation/Prediction_Data_Validation.py
-      md5: a9a2971dae39613b1e46b3d1d1ef71e2
-      size: 6230
+      md5: 49f6960f5c89d2139ce1d35ff4ecd670
+      size: 6266
+    - path: src/Prediction_Service/db/db_operations_prediction.py
+      md5: 9d5f96548da6f36634c13df6759da1c4
+      size: 4264
     - path: src/Training_Service/Cluster_Data/cluster.py
       md5: ec7681a63cc981589372ba8aec62ad4e
       size: 2927
-    - path: src/Training_Service/Data_Preprocessing/preprocessing.py
-      md5: 448b0b70a93af6e282246333b772524d
-      size: 8974
     - path: src/Training_Service/Data_Validation/Data_Validation.py
-      md5: 61ef53017cc9ad479d3d4faa76b00618
-      size: 5808
+      md5: b5bd4317fbcd7d7e372276c49ba28ce8
+      size: 5800
     - path: src/Training_Service/Hyperparameter/hyperparameter_tunning.py
       md5: 156746f9464a08e18d372398a4ed1875
       size: 7976
@@ -81,6 +84,9 @@ stages:
     - path: src/Training_Service/model_operations/model_ops.py
       md5: d5347172194593646abbea705e03af8a
       size: 6992
+    - path: src/log_files/Prediction_logs/Data_Validation.log
+      md5: 45f36101f0b8e5e42c8427e2714b8a34
+      size: 41040
     - path: src/logger/logger.py
       md5: f772aeefe617fbfa19810cadd93f6409
       size: 1233

@@ -18,11 +18,11 @@ class Validate_data:
     def validate_name_of_the_files(self):
         for file in os.listdir(self.data_folder):
             if re.match('[zomato_]+[\d]+[_]+[\d]+[.csv]',file) and '.dvc' not in file:
-                self.log.log_writer(f'Regex Matches for file {file}','Data_Validation.log','p')
+                self.log.log_writer(f'Regex Matches for file {file}','Data_Validation.log',service_name='p')
                 name,_=file.split('.')
                 _,LengthOfDateStampInFile, LengthOfTimeStampInFile=name.split('_')
                 if len(LengthOfDateStampInFile)==int(self.json_file['LengthOfDateStampInFile']) and len(LengthOfTimeStampInFile)==int(self.json_file['LengthOfTimeStampInFile']):
-                    self.log.log_writer(f'LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file {file} and copy to Good Data Folder','Data_Validation.log','p')
+                    self.log.log_writer(f'LengthOfDateStampInFile and LengthOfTimeStampInFile,  Matches for file {file} and copy to Good Data Folder','Data_Validation.log',service_name='p')
                     self.copy_to_Good_Data_Folder(os.path.join('Prediction_Batch_Files',file),file)
                 else:
                     self.log.log_writer(f'LengthOfDateStampInFile and LengthOfTimeStampInFile,  not Matches for file {file} and Copy to Bad Data Folder','Data_Validation.log',message_type='Warning', service_name='p')
@@ -47,9 +47,9 @@ class Validate_data:
     def move_to_Bad_Data_Folder(self,file_path,file):
         try:
             shutil.move(file_path,'Prediction_Bad_Data_Folder')
-            self.log.log_writer(f'Sucessfully copy the file {file} to Prediction_Bad_Data_Folder','Data_Validation.log',service_name='p')
+            self.log.log_writer(f'Sucessfully move the file {file} to Prediction_Bad_Data_Folder','Data_Validation.log',service_name='p')
         except Exception as e:
-            self.log.log_writer(f'Could not copy the file {file} to Prediction_Bad_Data_Folder error: {str(e)}','Data_Validation.log','Error',service_name='p')
+            self.log.log_writer(f'Could not move the file {file} to Prediction_Bad_Data_Folder error: {str(e)}','Data_Validation.log','Error',service_name='p')
     def validate_number_of_columns(self):
         for file in os.listdir(self.good_data_path):
             with open(os.path.join(self.good_data_path,file)) as csvfile:
@@ -59,7 +59,7 @@ class Validate_data:
                         self.log.log_writer(f'Number of Columns of file {file} Matched with the schema file','Data_Validation.log',service_name='p')
                     else:
                         self.log.log_writer(f'Number of Columns of file  {file} doesnot Matched with the schema so we are moving it to Bad Data','Data_Validation.log','Warning',service_name='p')
-                        self.move_to_Bad_Data_Folder(os.path.join('Prediction_Batch_Files',file),file)
+                        self.move_to_Bad_Data_Folder(os.path.join('Prediction_Good_Data_Folder',file),file)
                     break
     def validate_name_of_columns(self):
         for file in os.listdir(self.good_data_path):
@@ -69,7 +69,7 @@ class Validate_data:
                 self.log.log_writer(f'Name of Columns of file {file} Matched with the schema file','Data_Validation.log',service_name='p')
             else:
                 self.log.log_writer(f'Name of Columns of file {file} not matched with the schema file so we are moving towards Prediction_Bad_Data_Folder','Data_Validation.log','Warning',service_name='p')
-                self.move_to_Bad_Data_Folder(os.path.join('Prediction_Batch_Files',file),file)
+                self.move_to_Bad_Data_Folder(os.path.join('Prediction_Good_Data_Folder',file),file)
     def remove_col_that_have_all_null_values(self):
         for file in os.listdir(self.good_data_path):
             flag=True

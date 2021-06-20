@@ -4,7 +4,7 @@ stages:
     deps:
     - app.py
     - Training_Batch_Files
-    - src/Training_Service/Data_Preprocessing/preprocessing.py
+    - src/Data_Preprocessing/preprocessing.py
     - src/Training_Service/Data_Validation/Data_Validation.py
     - src/Training_Service/db/db_operations.py
     - src/logger/logger.py
@@ -13,6 +13,8 @@ stages:
     - src/Training_Service/model_operations/model_ops.py
     - src/Training_Service/metrics/metrics.py
     - src/Training_Service/Hyperparameter/hyperparameter_tunning.py
-    - Prediction_Batch_files
+    - Prediction_Batch_Files
     - src/Prediction_Service/Data_Validation/Prediction_Data_Validation.py
     - schema_prediction.json
+    - src/Prediction_Service/db/db_operations_prediction.py
+    - src/log_files/Prediction_logs/Data_Validation.log

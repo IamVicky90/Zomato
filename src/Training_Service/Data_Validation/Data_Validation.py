@@ -59,7 +59,7 @@ class Validate_data:
                         self.log.log_writer(f'Number of Columns of file {file} Matched with the schema file','Data_Validation.log')
                     else:
                         self.log.log_writer(f'Number of Columns of file  {file} doesnot Matched with the schema so we are moving it to Bad Data','Data_Validation.log','Warning')
-                        self.move_to_Bad_Data_Folder(os.path.join('Training_Batch_Files',file),file)
+                        self.move_to_Bad_Data_Folder(os.path.join('Good_Data_Folder',file),file)
                     break
     def validate_name_of_columns(self):
         for file in os.listdir(self.good_data_path):
@@ -69,7 +69,7 @@ class Validate_data:
                 self.log.log_writer(f'Name of Columns of file {file} Matched with the schema file','Data_Validation.log')
             else:
                 self.log.log_writer(f'Name of Columns of file {file} not matched with the schema file so we are moving towards Bad_Data_Folder','Data_Validation.log','Warning')
-                self.move_to_Bad_Data_Folder(os.path.join('Training_Batch_Files',file),file)
+                self.move_to_Bad_Data_Folder(os.path.join('Good_Data_Folder',file),file)
     def remove_col_that_have_all_null_values(self):
         for file in os.listdir(self.good_data_path):
             flag=True

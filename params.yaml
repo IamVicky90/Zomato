@@ -1,5 +1,6 @@
 data_preprocessing:
   csv_path: Master_Training_File/Zomato.csv
+  predict_csv_path: Master_Prediction_File/Zomato_prediction.csv
   columns_to_remove: ['serial','url','address' ,'phone', 'reviews_list','dish_liked']
   n_neighbors: 3
   rename_columns: {'listed_in_type':'type','listed_in_city':'city','approx_cost_for_two_people':'cost'}

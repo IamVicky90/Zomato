@@ -1,22 +1,44 @@
 from src.Training_Service.Data_Validation import Data_Validation
 from src.Training_Service.db import db_operations
-from src.Training_Service.Data_Preprocessing import preprocessing
-from src.Training_Service.Cluster_Data import cluster
+from src.Data_Preprocessing import preprocessing
+from src.Cluster_Data import cluster
 from src.Training_Service.model_operations import model_ops
 from flask import Flask, render_template, request,redirect,url_for
 from src.Prediction_Service.Data_Validation import Prediction_Data_Validation
+from src.Prediction_Service.db import db_operations_prediction
 import os
 import shutil
 import sys
 import yaml
+import ast
 app=Flask(__name__)
-def create_necessary_Directories():
+def create_Traing_necessary_Directories():
     if 'Training_Batch_Files' in os.listdir(os.getcwd()):
         shutil.rmtree('Training_Batch_Files')
     os.makedirs('Training_Batch_Files')
+    if 'Bad_Data_Folder' in os.listdir(os.getcwd()):
+        shutil.rmtree('Bad_Data_Folder')
+    os.makedirs('Bad_Data_Folder')
+    if 'Good_Data_Folder' in os.listdir(os.getcwd()):
+        shutil.rmtree('Good_Data_Folder')
+    os.makedirs('Good_Data_Folder')
+    if 'Master_Training_File' in os.listdir(os.getcwd()):
+        shutil.rmtree('Master_Training_File')
     if 'models' in os.listdir(os.getcwd()):
         shutil.rmtree('models')
     os.makedirs('models')
+def create_Prediction_necessary_Directories():
+    if 'Prediction_Batch_Files' in os.listdir(os.getcwd()):
+        shutil.rmtree('Prediction_Batch_Files')
+    os.makedirs('Prediction_Batch_Files')
+    if 'Prediction_Bad_Data_Folder' in os.listdir(os.getcwd()):
+        shutil.rmtree('Prediction_Bad_Data_Folder')
+    os.makedirs('Prediction_Bad_Data_Folder')
+    if 'Prediction_Good_Data_Folder' in os.listdir(os.getcwd()):
+        shutil.rmtree('Prediction_Good_Data_Folder')
+    os.makedirs('Prediction_Good_Data_Folder')
+    if 'Master_Prediction_File' in os.listdir(os.getcwd()):
+        shutil.rmtree('Master_Prediction_File')
 def read_params():
     with open('params.yaml') as  file:
         config=yaml.safe_load(file)
@@ -26,8 +48,8 @@ def home():
     return render_template('index.html')
 @app.route('/train',methods=['POST','GET'])
 def train():
-    if request.method=='POST':
-        create_necessary_Directories()
+    if request.method=='POST__':
+        create_Traing_necessary_Directories()
         Training_path='Training_Batch_Files'
         files=request.files.getlist("folder")
         for file in files:
@@ -91,8 +113,8 @@ def train():
 @app.route('/predict',methods=['POST','GET'])
 def predict():
     if request.method=='POST':
-        create_necessary_Directories()
-        prediction_path='Prediction_Batch_files'
+        create_Prediction_necessary_Directories()
+        prediction_path='Prediction_Batch_Files'
         files=request.files.getlist("folder")
         for file in files:
             if '.csv' in file.filename:
@@ -113,6 +135,26 @@ def predict():
         dv.validate_number_of_columns()
         dv.validate_name_of_columns()
         dv.replace_Null_with_NAN()
+        db=db_operations_prediction.db_ops()
+        db.create_Table('Zomato','zomato_prediction.db')
+        db.insert_values_into_table('zomato_prediction.db','Zomato')
+        db.dump_data_from_database_to_one_csv_file('zomato_prediction.db','Zomato')
+        process=preprocessing.process_data()
+        config_file=read_params()
+        df=process.create_csv_to_dataframe(config_file['data_preprocessing']['predict_csv_path'],service_name='p')
+        df=process.drop_unnecessery_columns(df,config_file['data_preprocessing']['columns_to_remove'],service_name='p')
+        df=process.rename_the_columns(df,config_file['data_preprocessing']['rename_columns'],service_name='p')
+        # df=process.impute_nan_values_by_knn_imputer(df,config_file['data_preprocessing']['n_neighbors'])
+        df=process.drop_nan_values(df,service_name='p')
+        df= process.cleaning_the_data_present_in_the_features(df,service_name='p')
+        dummy= process.create_dummy_columns(df,columns=config_file['data_preprocessing']['columns_to_dummy_variables'],drop_first=config_file['data_preprocessing']['drop_first'],service_name='p')
+        with open('src/log_files/Training_logs/X_dummy_selected_list_of_features_by_lasso.txt', 'r') as file:
+            features_that_are_taken_by_feature_selection=ast.literal_eval(file.read())
+        final_x_train=process.return_selected_features_by_lasso(dummy,features_that_are_taken_by_feature_selection)
+
+        cluster_obj=cluster.cluster()
+        x_test_with_cluster_column=cluster_obj.predict_clusters(final_x_train,service_name='p')
+        print(x_test_with_cluster_column)
         return '<h1>Cool! Prediction Completed Sucessfully!</h1>'
     else:
         return redirect(url_for('home'))
