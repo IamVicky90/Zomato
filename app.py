@@ -12,7 +12,9 @@ import shutil
 import sys
 import yaml
 import ast
+from flask_ngrok import run_with_ngrok
 app=Flask(__name__)
+run_with_ngrok(app)
 def create_Traing_necessary_Directories():
     if 'Training_Batch_Files' in os.listdir(os.getcwd()):
         shutil.rmtree('Training_Batch_Files')
@@ -170,4 +172,4 @@ def predict():
     else:
         return redirect(url_for('home'))
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()

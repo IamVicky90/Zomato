@@ -38,6 +38,7 @@ entrypoints==0.3
 filelock==3.0.12
 flake8==3.9.2
 Flask==2.0.1
+flask-ngrok==0.0.25
 flatten-dict==0.4.0
 flufl.lock==3.2
 fsspec==2021.5.0
@@ -161,7 +162,7 @@ sphinxcontrib-htmlhelp==2.0.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
--e git+https://github.com/IamVicky90/Zomato.git@acf52a24cb204a8c5a9ed048698e64b8ab47d341#egg=src
+-e git+https://github.com/IamVicky90/Zomato.git@3a4fa83b0d25b4f2f2a67b01327764ee0e195cde#egg=src
 statsmodels==0.12.2
 tabulate==0.8.9
 terminado==0.10.0
