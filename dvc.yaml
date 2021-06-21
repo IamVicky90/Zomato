@@ -9,7 +9,7 @@ stages:
     - src/Training_Service/db/db_operations.py
     - src/logger/logger.py
     - schema_training.json
-    - src/Training_Service/Cluster_Data/cluster.py
+    - src/Cluster_Data/cluster.py
     - src/Training_Service/model_operations/model_ops.py
     - src/Training_Service/metrics/metrics.py
     - src/Training_Service/Hyperparameter/hyperparameter_tunning.py
@@ -18,3 +18,4 @@ stages:
     - schema_prediction.json
     - src/Prediction_Service/db/db_operations_prediction.py
     - src/log_files/Prediction_logs/Data_Validation.log
+    - src/Prediction_Service/predict_data/prediction.py

@@ -45,7 +45,7 @@ class cluster:
     def return_dataframe_with_cluster_column(self,x,cluster,service_name='t'):
         try:
             x['cluster']=cluster
-            self.log.log_writer(f'Sucessfully created the cluster column','Cluster.log')
+            self.log.log_writer(f'Sucessfully created the cluster column','Cluster.log',service_name=service_name)
             return x
         except Exception as e:
             self.log.log_writer(f'Could not create the cluster column error: {str(e)}','Cluster.log','Error', service_name=service_name)

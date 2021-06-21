@@ -1,0 +1,24 @@
+2021-06-21 22:05:10		INFO: Model Prediction Part Starting!
+2021-06-21 22:05:10		INFO: Sucessfully load the model XGBOOST_Regressor_cluster_no_2.sav for cluster 2
+2021-06-21 22:05:10		INFO: Sucessfully predict the model XGBOOST_Regressor_cluster_no_2.sav for cluster 2 
+2021-06-21 22:05:10		INFO: Sucessfully load the model XGBOOST_Regressor_cluster_no_0.sav for cluster 0
+2021-06-21 22:05:10		INFO: Sucessfully predict the model XGBOOST_Regressor_cluster_no_0.sav for cluster 0 
+2021-06-21 22:05:11		INFO: Sucessfully load the model random_forest_regressor_cluster_no_1.sav for cluster 1
+2021-06-21 22:05:11		INFO: Sucessfully predict the model random_forest_regressor_cluster_no_1.sav for cluster 1 
+2021-06-21 22:05:11		INFO: Sucessfully convert the prediction and id array into pandas Data Frame and successfully return the csv Prediction file to path, File/prediction.csv
+2021-06-21 22:59:22		INFO: Model Prediction Part Starting!
+2021-06-21 22:59:22		INFO: Sucessfully load the model XGBOOST_Regressor_cluster_no_2.sav for cluster 2
+2021-06-21 22:59:22		INFO: Sucessfully predict the model XGBOOST_Regressor_cluster_no_2.sav for cluster 2 
+2021-06-21 22:59:22		INFO: Sucessfully load the model XGBOOST_Regressor_cluster_no_0.sav for cluster 0
+2021-06-21 22:59:22		INFO: Sucessfully predict the model XGBOOST_Regressor_cluster_no_0.sav for cluster 0 
+2021-06-21 22:59:22		INFO: Sucessfully load the model random_forest_regressor_cluster_no_1.sav for cluster 1
+2021-06-21 22:59:22		INFO: Sucessfully predict the model random_forest_regressor_cluster_no_1.sav for cluster 1 
+2021-06-21 22:59:22		INFO: Sucessfully convert the prediction and id array into pandas Data Frame and successfully return the csv Prediction file to path, File/prediction.csv
+2021-06-21 23:00:50		INFO: Model Prediction Part Starting!
+2021-06-21 23:00:50		INFO: Sucessfully load the model XGBOOST_Regressor_cluster_no_2.sav for cluster 2
+2021-06-21 23:00:50		INFO: Sucessfully predict the model XGBOOST_Regressor_cluster_no_2.sav for cluster 2 
+2021-06-21 23:00:51		INFO: Sucessfully load the model XGBOOST_Regressor_cluster_no_0.sav for cluster 0
+2021-06-21 23:00:51		INFO: Sucessfully predict the model XGBOOST_Regressor_cluster_no_0.sav for cluster 0 
+2021-06-21 23:00:51		INFO: Sucessfully load the model random_forest_regressor_cluster_no_1.sav for cluster 1
+2021-06-21 23:00:51		INFO: Sucessfully predict the model random_forest_regressor_cluster_no_1.sav for cluster 1 
+2021-06-21 23:00:51		INFO: Sucessfully convert the prediction and id array into pandas Data Frame and successfully return the csv Prediction file to path, File/prediction.csv
