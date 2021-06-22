@@ -11,10 +11,9 @@ import os
 import shutil
 import sys
 import yaml
+import json
 import ast
-from flask_ngrok import run_with_ngrok
 app=Flask(__name__)
-run_with_ngrok(app)
 def create_Traing_necessary_Directories():
     if 'Training_Batch_Files' in os.listdir(os.getcwd()):
         shutil.rmtree('Training_Batch_Files')
@@ -29,7 +28,9 @@ def create_Traing_necessary_Directories():
         shutil.rmtree('Master_Training_File')
     if 'models' in os.listdir(os.getcwd()):
         shutil.rmtree('models')
+    os.makedirs(os.path.join('src','log_files'),exist_ok=True)
     os.makedirs('models')
+    os.makedirs('reports',exist_ok=True)
 def create_Prediction_necessary_Directories():
     if 'Prediction_Batch_Files' in os.listdir(os.getcwd()):
         shutil.rmtree('Prediction_Batch_Files')
@@ -111,9 +112,23 @@ def train():
             parameters_xgboost_random=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['parameters']
             cv_xgboost_random=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['RandomizedSearchCV']['cv']
             verbose_xgboost_random=config_file['hyperparameter_tunning']['xgboost_hyperparameters']['RandomizedSearchCV']['verbose']
+            with open(os.path.join('reports','params.json'),'w') as f:
+                params={
+                    'Alpha value for selected list of features by lasso':config_file['data_preprocessing']['alpha'],
+                    'cv random forest for GridSearchCV':cv_random_forest_grid,
+                    'verbose random forest for GridSearchCV':verbose_random_forest_grid,
+                    'cv random forest for RandomizedSearchCV':cv_random_forest_random,
+                    'verbose random forest for RandomizedSearchCV':verbose_random_forest_random,
+                    'cv xgboost for GridSearchCV':cv_xgboost_grid,
+                    'verbose xgboost for GridSearchCV':verbose_xgboost_grid,
+                    'cv xgboost for RandomizedSearchCV':cv_xgboost_random,
+                    'verbose xgboost for RandomizedSearchCV':verbose_xgboost_random
+                }
+                json.dump(params,f,indent=4)
+            with open(os.path.join('reports','scores.json'),'a+') as f:
+                pass
             model_obs_obj.train_model_with_clusters_with_hyperparameter_tuning(x_train_with_cluster,y_train,x_test_with_cluster_column,y_test,parameters_random_forest_grid,cv_random_forest_grid,verbose_random_forest_grid,parameters_random_forest_random,cv_random_forest_random,verbose_random_forest_random,parameters_xgboost_grid,cv_xgboost_grid,verbose_xgboost_grid,parameters_xgboost_random,cv_xgboost_random,verbose_xgboost_random)
             model_obs_obj.selct_best_model_with_cluster(x_test_with_cluster_column,y_test)
-            
             return '<h1>Cool! Training Completed Sucessfully!</h1>'
         except Exception as e:
             return f'<h1>We are facing some error: {str(e)} <h1>'
@@ -161,15 +176,14 @@ def predict():
             with open('src/log_files/Training_logs/X_dummy_selected_list_of_features_by_lasso.txt', 'r') as file:
                 features_that_are_taken_by_feature_selection=ast.literal_eval(file.read())
             final_x_train=process.return_selected_features_by_lasso(dummy,features_that_are_taken_by_feature_selection)
-
             cluster_obj=cluster.cluster()
             x_test_with_cluster_column=cluster_obj.predict_clusters(final_x_train,service_name='p')
             prediction_obj=prediction.model_prediction()
             total_predictions_from_model=prediction_obj.model_prediction_with_cluster(x_test_with_cluster_column)
             return f'<h1>Cool! Prediction Completed Sucessfully here are the predictions results!</h1> </br> {total_predictions_from_model} and csv file is saved at path Prediction File/prediction.csv'
         except Exception as e:
-            return f'<h1>We are facing some error: {str(e)} <h1>'
+            return f'<h3>We are facing some error: {str(e)} <h3>'
     else:
         return redirect(url_for('home'))
 if __name__=='__main__':
-    app.run()
+    app.run(debug=True)

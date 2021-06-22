@@ -17,5 +17,10 @@ stages:
     - src/Prediction_Service/Data_Validation/Prediction_Data_Validation.py
     - schema_prediction.json
     - src/Prediction_Service/db/db_operations_prediction.py
-    - src/log_files/Prediction_logs/Data_Validation.log
+    - src/Prediction_Service/Data_Validation/Prediction_Data_Validation.py
     - src/Prediction_Service/predict_data/prediction.py
+    metrics:
+    - reports/params.json:
+        cache: false
+    - reports/scores.json:
+        cache: false
