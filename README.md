@@ -1,6 +1,6 @@
 ## Table of Contents.
   * [Demo](#demo)
-  * Deployment(#deployment)
+  * [Deployment](#deployment)
   * [Data Validation](#data-validation)
   * [Data Base Operations](#data-base-operations)
   * [Data Preprocessing](#data-preprocessing)
