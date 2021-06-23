@@ -1,6 +1,6 @@
 ## Table of Contents.
   * [Demo](#demo)
-  * Deployment
+  * Deployment(#deployment)
   * [Data Validation](#data-validation)
   * [Data Base Operations](#data-base-operations)
   * [Data Preprocessing](#data-preprocessing)
@@ -14,6 +14,7 @@
   * [Libraries](#libraries)
 # Demo
 ![error check your internet](https://github.com/IamVicky90/Zomato/blob/dev/src/demo.PNG)
+# Deployment
 ### [Deployment is done in heroku with ci-cd pipeline](https://zomato-price-prediction.herokuapp.com/)
 # Steps That I take to Solve this Machine Learning Problem
 ## Data Validation
