@@ -76,7 +76,7 @@ This project is divided into two part:
 2. Building deployed, and hosting a Flask web app on Microsoft Azure( https://health-app-by-vicky.azurewebsites.net ).
 
 ## Installation
-The Code is written in Python 3.8. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after [downloading it](https://github.com/IamVicky90/Plant-Disease-Prediction/archive/main.zip):
+The Code is written in Python 3.8. If you don't have Python installed you can find it [here](https://www.python.org/downloads/). If you are using a lower version of Python you can upgrade using the pip package, ensuring you have the latest version of pip. To install the required packages and libraries, run this command in the project directory after downloading this repo.
 ```bash
 pip install -r requirements.txt
 ```

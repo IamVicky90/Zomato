@@ -161,7 +161,7 @@ sphinxcontrib-htmlhelp==2.0.0
 sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
--e git+https://github.com/IamVicky90/Zomato.git@3a4fa83b0d25b4f2f2a67b01327764ee0e195cde#egg=src
+# -e git+https://github.com/IamVicky90/Zomato.git@3a4fa83b0d25b4f2f2a67b01327764ee0e195cde#egg=src
 statsmodels==0.12.2
 tabulate==0.8.9
 terminado==0.10.0
